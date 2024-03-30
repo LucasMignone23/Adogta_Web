@@ -87,9 +87,11 @@ a{
 
 .variedad h3 {
     padding-top: 5rem;
-    font-size: 2.5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
     text-align: center;
     color: #6B431F;
+    font-weight: bold;
 }
 
 .variedad .carrucel {
@@ -406,7 +408,7 @@ form .input_registro input{
 /*GENERAL FOOTER*/
 
 .footer{
-    height: 10rem;
+    height: 8rem;
     display: flex;
     justify-content: space-between;
 }
@@ -437,8 +439,85 @@ form .input_registro input{
 /*Media queries*/
 
 @media (max-width: 990px) {
+    /*General*/
     nav.navegacion.active {
         height: 20rem !important;
         background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
     }
+
+    .footer .firma p{
+        font-size:  0.7rem;
+    }
+    
+    .footer .redes img{
+        height: 2.5rem;
+    }
+    /*Fin General*/
+
+    /*Main pagina principal*/
+    .variedad h3{
+        padding-bottom: 2rem;
+    }
+    
+    .variedad .carrucel img{
+        height: 13rem;
+        width: 15rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    
+
+    .header ul li{
+        font-size: 1.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .header ul li a{
+        font-size: 1.5rem;
+    }
+
+
+    /*MAIN PAGINA PRINCIPAL*/
+    .presentacion{
+        display: grid;
+        width: auto;
+        place-items: center;
+    }
+
+    .presentacion img{
+        height:40rem;
+        width: 45rem;
+        padding: 1rem;
+    }
+    .presentacion p{
+        width: 40rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+
+    .variedad .carrucel{
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    .variedad .carrucel .che_left{
+        display: none;
+    }
+
+    .variedad .carrucel .che_right{
+        display: none;
+    }
+
+    .variedad .carrucel img{
+        height: 25rem;
+        width: 30rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /*FIN MAIN PAGINA PRINCIPAL*/
 }
