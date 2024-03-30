@@ -1,0 +1,497 @@
+/*Generales*/
+*{
+    font-size: 62.1%;
+    font-family: 'Inria Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*ENCABEZADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.header .logo{
+    padding-left: 5rem;
+    height: 10rem;
+}
+
+.header .inicio ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.header ul li{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.header ul li a{
+    font-size: 2rem;
+}
+
+.header ul li a:hover{
+    color:#D9D9D9
+}
+
+
+/*NAVEGACION*/
+
+.navegacion{
+    height: 6rem;
+    background-color: #A8D3CC;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacion ul li{
+    font-size: 3rem;
+    padding-top: 0.5rem;
+}
+
+.navegacion ul li a:hover{
+    color:#D9D9D9;
+}
+
+/*FIN GENERALES*/
+
+/*Pagina principal MAIN*/
+
+.principal{
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.principal h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #6B431F;
+}
+
+.presentacion{
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem ;
+}
+
+.variedad h3 {
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6B431F;
+}
+
+.variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover{
+    cursor: pointer;
+}
+
+.variedad .carrucel .che_left{
+    margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right{
+    margin-right: 10rem
+}
+.color_hr{
+    border-color:#A8D3CC;
+}
+
+/*Pagina principal Main fin*/
+
+/*Pagina Perros Main*/
+
+.container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A8D3CC;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+.container .caja_filtro p{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+    height: 3rem;
+    color: #ffffff;
+    padding-right: 2rem;
+}
+
+.mascotas{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.fila{
+    display: flex;
+    gap: 10rem;
+    padding-bottom: 5rem;
+}
+
+.fila .ficha{
+    border-radius: 15px;
+    background-color: #A8D3CC;
+    height: 28rem;
+}
+
+.fila .ficha .img_adop{
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 20rem;
+}
+
+.ficha .info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.ficha .info .icon{
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+
+/*PaginaDonaciones MAIN*/
+
+.donaciones h2{
+    font-size: 4rem;
+    color: #6B431F;
+    text-align: center;
+}
+
+.donaciones .info_donacion{
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu{
+    height: 40rem;
+    width: 50rem;
+    border-radius: 15px;
+}
+
+.info_donacion .texto_donacion{
+    font-size: 3rem;
+    width: 30%;
+    padding:5rem;
+    
+}
+
+.enlaces_donaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.enlaces_donaciones .enlace{
+    text-align: center;
+}
+
+.enlaces_donaciones .enlace p{
+    margin-top: -1rem;
+    font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+    height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+
+/*Pagina ¿Quienes Somos?*/
+
+.info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info_nosotros p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hr_contacto{
+    width: 80rem;
+    border-color: #6B431F;
+
+}
+.formulario .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form .inputs{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.form .inputs input{
+    height: 3rem;
+    width: 20rem;
+    background-color:#A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+}
+.form .inputs input::placeholder{
+    text-align: center;}
+
+.form textarea{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+.form textarea::placeholder{
+    text-align: center;
+}
+
+.form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form .button input{
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+
+/*Pagina Registro*/
+.registro{
+    display: grid;
+    justify-content: center;
+}
+
+.registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.registro .option .color1{
+    background-color: #A8D3CC;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.registro .option .color2{
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.form_registro{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input_registro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_registro .refugio{
+    display: grid;
+    width: 100%;
+}
+
+.input_registro .adoptante{
+    display: none;
+    width: 100%;
+}
+
+
+form .input_registro input{
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.boton_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.button_registro{
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #A8D3CC;
+    height: 4rem;
+}
+/*Pagina Registro FIN*/
+
+/*GENERAL FOOTER*/
+
+.footer{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .firma{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.footer .firma p{
+    font-size: 1.3rem;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .redes img{
+    height: 4rem;
+}
+
+.footer .redes .twitter{
+    padding-right: 3rem;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:767px){
+
+    .header .inicio ul li{
+        font-size: 1.2rem;
+        padding-right:1.2rem ;
+    }
+
+    .header .inicio ul li a{
+        font-size: 1.2rem;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navegacion ul li {
+        padding-right: 1.5rem;
+    }
+
+    .navegacion ul li a{
+        font-size: 1.2rem;
+    }
+
+
+    .presentacion{
+        display: grid;
+    }
+    .presentacion img{
+        padding-left: 0.5rem;
+    }
+    .presentacion p{
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+
+    .variedad .carrucel{
+        display: grid;
+        justify-content: centers;
+        align-items: center;
+    }
+
+    .variedad .carrucel .chevron{
+        display: none;
+    }
+}
