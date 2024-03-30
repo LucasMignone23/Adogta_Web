@@ -18,3 +18,14 @@ function mostrarAdoptante() {
     bot_adoptante.style.backgroundColor = '#A8D3CC'; // Cambiar color del botón adoptante
     bot_refugio.style.backgroundColor = '#D9D9D9'; // Cambiar color del botón refugio
 }
+
+
+document.getElementById("toggleBtn").addEventListener("click", function() {
+    var nav = document.querySelector('.navegacion');
+    if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+    } else {
+        nav.classList.add('active');
+    }
+});
+

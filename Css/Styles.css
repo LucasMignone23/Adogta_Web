@@ -45,21 +45,9 @@ a{
 
 .navegacion{
     height: 6rem;
-    background-color: #A8D3CC;
+    background-color: #A8D3CC !important ;
 }
-
-.navegacion ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navegacion ul li{
-    font-size: 3rem;
-    padding-top: 0.5rem;
-}
-
-.navegacion ul li a:hover{
+.navegacion a:hover{
     color:#D9D9D9;
 }
 
@@ -448,50 +436,9 @@ form .input_registro input{
 
 /*Media queries*/
 
-@media only screen and (max-width:767px){
-
-    .header .inicio ul li{
-        font-size: 1.2rem;
-        padding-right:1.2rem ;
-    }
-
-    .header .inicio ul li a{
-        font-size: 1.2rem;
-    }
-
-    .navegacion {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .navegacion ul li {
-        padding-right: 1.5rem;
-    }
-
-    .navegacion ul li a{
-        font-size: 1.2rem;
-    }
-
-
-    .presentacion{
-        display: grid;
-    }
-    .presentacion img{
-        padding-left: 0.5rem;
-    }
-    .presentacion p{
-        text-align: center;
-        font-size: 1.5rem;
-    
-    }
-
-    .variedad .carrucel{
-        display: grid;
-        justify-content: centers;
-        align-items: center;
-    }
-
-    .variedad .carrucel .chevron{
-        display: none;
+@media (max-width: 990px) {
+    nav.navegacion.active {
+        height: 20rem !important;
+        background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
     }
 }
