@@ -592,14 +592,9 @@ form .input_registro input{
 
 
     /*Inicio Perros*/
-    .mascotas{
-        width: 100%;
+    .container .caja_filtro{
+        width: auto;
     }
-
-    .container{
-        width: 100%;
-    }
-
     .fila{
         display: grid;
         grid-template-columns: 1fr 1fr;
