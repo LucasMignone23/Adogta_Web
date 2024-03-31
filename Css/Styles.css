@@ -543,6 +543,10 @@ form .input_registro input{
         font-size: 1.5rem;
     }
 
+    .principal{
+        height: 100%;
+    }
+
 
     /*MAIN PAGINA PRINCIPAL*/
     .presentacion{
@@ -625,9 +629,7 @@ form .input_registro input{
     }
     
     .hr_contacto{
-        width: 80rem;
-        border-color: #6B431F;
-    
+        width: 100%;
     }
     .formulario .form{
         display: flex;
