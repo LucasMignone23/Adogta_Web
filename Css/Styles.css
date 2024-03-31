@@ -657,4 +657,30 @@ form .input_registro input{
     }
 
     /*Fin Contacto/Nosostros*/
+
+    /*Inicio Registro*/
+    .registro .option {
+        display: flex;
+        height: 5rem;
+        width: 39rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .registro .option .color1{
+        width: 22rem;
+        margin-left: 1rem;
+    }
+    
+    .registro .option .color2{
+        border-radius: 100px;
+        height: 5rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    form .input_registro input{
+        width: 35rem;
+    }
+    /*Fin Registro*/
 }
