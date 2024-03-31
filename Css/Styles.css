@@ -153,6 +153,7 @@ a{
 .container .caja_filtro img {
     height: 3rem;
     color: #ffffff;
+    width: 100%;
     
 }
 
@@ -161,6 +162,7 @@ a{
     justify-content: center;
     padding-top: 10rem;
     margin: 0 auto;
+    width: auto;
 }
 
 .fila{
@@ -466,6 +468,21 @@ form .input_registro input{
         width: 15rem;
     }
 
+    /*Fin MAIN pagina principal*/
+    
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .fila .ficha{
+        margin: 0;
+    }
+    /*Fin Perros*/
+
 }
 
 @media (max-width:768px) {
@@ -522,4 +539,23 @@ form .input_registro input{
     }
 
     /*FIN MAIN PAGINA PRINCIPAL*/
+
+
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fila .ficha{
+        margin: 0;
+        width: auto;;
+    }
+
+    .fila .ficha .img_adop{
+        margin: 0;
+        width: 100%;
+    }
+    /*Fin Perros*/ 
 }
