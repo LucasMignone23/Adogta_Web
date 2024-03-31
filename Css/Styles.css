@@ -592,12 +592,12 @@ form .input_registro input{
 
 
     /*Inicio Perros*/
-
     .mascotas{
-        width: auto;
+        width: 100%;
     }
+
     .container{
-        width: auto;
+        width: 100%;
     }
 
     .fila{
