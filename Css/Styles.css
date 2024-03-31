@@ -593,6 +593,9 @@ form .input_registro input{
 
     /*Inicio Perros*/
 
+    .mascotas{
+        width: 100%;
+    }
     .container{
         width: 100%;
     }
