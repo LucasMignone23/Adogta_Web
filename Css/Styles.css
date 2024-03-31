@@ -593,6 +593,10 @@ form .input_registro input{
 
     /*Inicio Perros*/
 
+    .container{
+        width: 100%;
+    }
+
     .fila{
         display: grid;
         grid-template-columns: 1fr 1fr;
