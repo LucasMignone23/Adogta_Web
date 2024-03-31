@@ -604,4 +604,71 @@ form .input_registro input{
         width: 100%;
     }
     /*Fin Perros*/ 
+
+    /*Inicio Contacto/Nosostros*/
+
+    .info_nosotros {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info_nosotros p{
+        font-size: 1.5rem;
+        padding: 3rem 3rem 0 3rem ;
+    }
+
+    .formulario h2{
+        font-size: 2.5rem;
+        color: #6B431F;
+        text-align: center;
+    }
+    
+    .hr_contacto{
+        width: 80rem;
+        border-color: #6B431F;
+    
+    }
+    .formulario .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .form .inputs{
+        display: grid;
+        align-items: center;
+    }
+    
+    .form .inputs input{
+        height: 3rem;
+        margin: 0 auto;
+        background-color:#A8D3CC;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .form textarea{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: auto;
+        height: 15rem;
+        font-size: 2rem;
+        resize: none;
+    }
+    .form .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    
+    .form .button input{
+        height: 5rem;
+        width: 15rem;
+        border: none;
+        background-color: #D9D9D9;
+        font-size: 1.5rem;
+    }
+
+    /*Fin Contacto/Nosostros*/
 }
