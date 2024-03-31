@@ -202,6 +202,8 @@ a{
 /*PaginaDonaciones MAIN*/
 
 .donaciones h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     font-size: 4rem;
     color: #6B431F;
     text-align: center;
@@ -213,15 +215,16 @@ a{
 }
 
 .donaciones .info_donacion .donacion_refu{
-    height: 40rem;
-    width: 50rem;
+    height: 50rem;
+    width: 60rem;
     border-radius: 15px;
 }
 
 .info_donacion .texto_donacion{
     font-size: 3rem;
-    width: 30%;
-    padding:5rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
     
 }
 
@@ -229,7 +232,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 
 .enlaces_donaciones .enlace{
@@ -482,6 +485,50 @@ form .input_registro input{
         margin: 0;
     }
     /*Fin Perros*/
+
+    /*Inicio Donaciones*/
+    .donaciones {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .donaciones h2{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: #6B431F;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .donaciones .info_donacion{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .donaciones .info_donacion .donacion_refu{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .info_donacion .texto_donacion{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding:5rem;
+        
+    }
+
+    .enlaces_donaciones .enlace a img{
+    height: 10rem;
+    }
+    
+    /*Fin Donaciones*/
 }
 
 @media (max-width:768px) {
