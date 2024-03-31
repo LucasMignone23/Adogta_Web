@@ -140,6 +140,7 @@ a{
     margin-bottom: 5rem;
     align-items: center;
     margin-top: -5rem;
+    padding-right: 2rem;
 }
 
 .container .caja_filtro p{
@@ -152,18 +153,18 @@ a{
 .container .caja_filtro img {
     height: 3rem;
     color: #ffffff;
-    padding-right: 2rem;
+    
 }
 
 .mascotas{
     display: flex;
     justify-content: center;
     padding-top: 10rem;
+    margin: 0 auto;
 }
 
 .fila{
     display: flex;
-    gap: 10rem;
     padding-bottom: 5rem;
 }
 
@@ -171,13 +172,14 @@ a{
     border-radius: 15px;
     background-color: #A8D3CC;
     height: 28rem;
+    margin-left: 2rem;
 }
 
 .fila .ficha .img_adop{
     border-radius: 15px;
     padding: 5px;
     height: 22rem;
-    width: 20rem;
+    width: 25rem;
 }
 
 .ficha .info{
