@@ -655,20 +655,6 @@ form .input_registro input{
         font-size: 2rem;
         resize: none;
     }
-    .form .button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 2rem;
-    }
-    
-    .form .button input{
-        height: 5rem;
-        width: 15rem;
-        border: none;
-        background-color: #D9D9D9;
-        font-size: 1.5rem;
-    }
 
     /*Fin Contacto/Nosostros*/
 }
