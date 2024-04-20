@@ -1,0 +1,3462 @@
+/*VARIABLES*/
+
+$font-size: 62.1%;
+$primary-color:#A8D3CC;
+$secondary-color:#D9D9D9;
+$title-color:#6B431F;
+$black:#000000;
+$white:#FFFFFF;
+
+
+/*Generales*/
+*{
+    font-size: $font-size;
+    font-family: 'Inria Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+
+/*ENCABEZADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.header .logo{
+    padding-left: 5rem;
+    height: 10rem;
+}
+
+.header .inicio ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.header ul li{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.header ul li a{
+    font-size: 2rem;
+}
+
+.header ul li a:hover{
+    color:$secondary-color
+}
+
+
+/*NAVEGACION*/
+
+.navegacion{
+    height: 6rem;
+    background-color: $primary-color !important ;
+}
+.navegacion a:hover{
+    color:$secondary-color;
+}
+
+/*FIN GENERALES*/
+
+/*Pagina principal MAIN*/
+
+.principal{
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.principal h1{
+    font-size: 5rem;
+    text-align: center;
+    color: $title-color;
+}
+
+.presentacion{
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem ;
+}
+
+.variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: $title-color;
+    font-weight: bold;
+}
+
+.variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover{
+    cursor: pointer;
+}
+
+.variedad .carrucel .che_left{
+    margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right{
+    margin-right: 10rem
+}
+.color_hr{
+    border-color:$primary-color;
+}
+
+/*Pagina principal Main fin*/
+
+/*Pagina Perros Main*/
+
+.container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+}
+
+.container .caja_filtro p{
+    font-size: 2rem;
+    color: $white;
+    font-weight: bold;
+    padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+    height: 3rem;
+    color: $white;
+    width: 100%;
+    
+}
+
+.mascotas{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.fila .ficha{
+    border-radius: 15px;
+    background-color: $primary-color;
+    height: 28rem;
+    margin-left: 2rem;
+}
+
+.fila .ficha .img_adop{
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+}
+
+.ficha .info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.ficha .info .icon{
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+
+/*PaginaDonaciones MAIN*/
+
+.donaciones h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: $title-color;
+    text-align: center;
+}
+
+.donaciones .info_donacion{
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu{
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+}
+
+.info_donacion .texto_donacion{
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+.enlaces_donaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.enlaces_donaciones .enlace{
+    text-align: center;
+}
+
+.enlaces_donaciones .enlace p{
+    margin-top: -1rem;
+    font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+    height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+
+/*Pagina ¿Quienes Somos?*/
+
+.info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info_nosotros p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: $title-color;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hr_contacto{
+    width: 100%;
+    border-color: $title-color;
+
+}
+.formulario .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form .inputs{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.form .inputs input{
+    height: 3rem;
+    width: 20rem;
+    background-color:$primary-color;;
+    border: none;
+    font-size: 1.5rem;
+}
+.form .inputs input::placeholder{
+    text-align: center;}
+
+.form textarea{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+.form textarea::placeholder{
+    text-align: center;
+}
+
+.form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form .button input{
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: $secondary-color;
+    font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+
+/*Pagina Registro*/
+.registro{
+    display: grid;
+    justify-content: center;
+}
+
+.registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.registro .option .color1{
+    background-color: $primary-color;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.registro .option .color2{
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.form_registro{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input_registro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_registro .refugio{
+    display: grid;
+    width: 100%;
+}
+
+.input_registro .adoptante{
+    display: none;
+    width: 100%;
+}
+
+
+form .input_registro input{
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.boton_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.button_registro{
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-color;
+    height: 4rem;
+}
+/*Pagina Registro FIN*/
+
+/*GENERAL FOOTER*/
+
+.footer{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .firma{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.footer .firma p{
+    font-size: 1.3rem;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .redes img{
+    height: 4rem;
+}
+
+.footer .redes .twitter{
+    padding-right: 3rem;
+}
+
+/*Media queries*/
+
+@media (max-width: 990px) {
+    /*General*/
+    nav.navegacion.active {
+        height: 20rem !important;
+        background-color: $primary-color !important; /* Cambia este valor según sea necesario */
+    }
+
+    .footer .firma p{
+        font-size:  0.7rem;
+    }
+    
+    .footer .redes img{
+        height: 2.5rem;
+    }
+    /*Fin General*/
+
+    /*Main pagina principal*/
+    .variedad h3{
+        padding-bottom: 2rem;
+    }
+    
+    .variedad .carrucel img{
+        height: 13rem;
+        width: 15rem;
+    }
+
+    /*Fin MAIN pagina principal*/
+    
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .fila .ficha{
+        margin: 0;
+    }
+    /*Fin Perros*/
+
+    /*Inicio Donaciones*/
+    .donaciones {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .donaciones h2{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $title-color;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .donaciones .info_donacion{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .donaciones .info_donacion .donacion_refu{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .info_donacion .texto_donacion{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding:5rem;
+        
+    }
+
+    .enlaces_donaciones .enlace a img{
+        height: 10rem;
+    }
+    
+    /*Fin Donaciones*/
+}
+
+@media (max-width:768px) {
+    
+
+    .header ul li{
+        font-size: 1.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .header ul li a{
+        font-size: 1.5rem;
+    }
+
+    .principal{
+        height: 100%;
+    }
+
+
+    /*MAIN PAGINA PRINCIPAL*/
+    .presentacion{
+        display: grid;
+        width: auto;
+        place-items: center;
+    }
+
+    .presentacion img{
+        height:40rem;
+        width: 45rem;
+        padding: 1rem;
+    }
+    .presentacion p{
+        width: 40rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+
+    .variedad .carrucel{
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    .variedad .carrucel .che_left{
+        display: none;
+    }
+
+    .variedad .carrucel .che_right{
+        display: none;
+    }
+
+    .variedad .carrucel img{
+        height: 25rem;
+        width: 30rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /*FIN MAIN PAGINA PRINCIPAL*/
+
+
+    /*Inicio Perros*/
+    .container .caja_filtro{
+        width: auto;
+    }
+    
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fila .ficha{
+        margin: 0;
+        width: auto;;
+    }
+
+    .fila .ficha .img_adop{
+        margin: 0;
+        width: 100%;
+    }
+    /*Fin Perros*/ 
+
+    /*Inicio Contacto/Nosostros*/
+
+    .info_nosotros {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info_nosotros p{
+        font-size: 1.5rem;
+        padding: 3rem 3rem 0 3rem ;
+    }
+
+    .formulario h2{
+        font-size: 2.5rem;
+        color: $title-color;
+        text-align: center;
+    }
+    
+    .hr_contacto{
+        width: 100%;
+    }
+    .formulario .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .form .inputs{/*Generales*/
+        *{
+            font-size: 62.1%;
+            font-family: 'Inria Serif', serif;
+        }
+        
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+        
+        /*ENCABEZADO*/
+        .header{
+            display: flex;
+            justify-content: space-between;
+            height: 10rem;
+        }
+        
+        .header .logo{
+            padding-left: 5rem;
+            height: 10rem;
+        }
+        
+        .header .inicio ul{
+            display: flex;
+            list-style: none;
+            padding-right: 5rem;
+        }
+        
+        .header ul li{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+        
+        .header ul li a{
+            font-size: 2rem;
+        }
+        
+        .header ul li a:hover{
+            color:$secondary-color
+        }
+        
+        
+        /*NAVEGACION*/
+        
+        .navegacion{
+            height: 6rem;
+            background-color: $primary-color !important ;
+        }
+        .navegacion a:hover{
+            color:$secondary-color;
+        }
+        
+        /*FIN GENERALES*/
+        
+        /*Pagina principal MAIN*/
+        
+        .principal{
+            height: auto;
+            padding-bottom: 3rem;
+        }
+        
+        .principal h1{
+            font-size: 5rem;
+            text-align: center;
+            color: $title-color;
+        }
+        
+        .presentacion{
+            margin: 0 auto;
+            width: 100rem;
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+        }
+        
+        .presentacion img{
+            width: 35rem;
+            height: 30rem;
+            border-radius: 15px;
+        }
+        .presentacion p {
+            font-size: 2rem;
+            width: 50%;
+            padding-top: 3rem ;
+        }
+        
+        .variedad h3 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            font-size: 3rem;
+            text-align: center;
+            color: $title-color;
+            font-weight: bold;
+        }
+        
+        .variedad .carrucel {
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
+        
+        .variedad .carrucel img {
+            height: 16rem;
+            width: 19rem;
+            border-radius: 15px;
+        }
+        
+        .variedad .carrucel .chevron {
+            height: 5rem;
+            padding-top: 6rem;
+        }
+        
+        .variedad .carrucel .chevron:hover{
+            cursor: pointer;
+        }
+        
+        .variedad .carrucel .che_left{
+            margin-left: 10rem;
+        }
+        
+        .variedad .carrucel .che_right{
+            margin-right: 10rem
+        }
+        .color_hr{
+            border-color:$primary-color;
+        }
+        
+        /*Pagina principal Main fin*/
+        
+        /*Pagina Perros Main*/
+        
+        .container .caja_filtro {
+            display: flex;
+            justify-content: space-between;
+            background-color: $primary-color;
+            opacity: 60%;
+            height: 5rem;
+            width: 50rem;
+            margin-bottom: 5rem;
+            align-items: center;
+            margin-top: -5rem;
+            padding-right: 2rem;
+        }
+        
+        .container .caja_filtro p{
+            font-size: 2rem;
+            color: $white;
+            font-weight: bold;
+            padding-left: 3rem;
+        }
+        
+        .container .caja_filtro img {
+            height: 3rem;
+            color: $white;
+            width: 100%;
+            
+        }
+        
+        .mascotas{
+            display: flex;
+            justify-content: center;
+            padding-top: 10rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .fila{
+            display: flex;
+            padding-bottom: 5rem;
+        }
+        
+        .fila .ficha{
+            border-radius: 15px;
+            background-color: $primary-color;
+            height: 28rem;
+            margin-left: 2rem;
+        }
+        
+        .fila .ficha .img_adop{
+            border-radius: 15px;
+            padding: 5px;
+            height: 22rem;
+            width: 25rem;
+        }
+        
+        .ficha .info{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .ficha .info .icon{
+            height: 2.2rem;
+            padding-top: 1rem;
+            padding-right: 1rem;
+        }
+        
+        /*Pagina Perros Main Fin */
+        
+        /*PaginaDonaciones MAIN*/
+        
+        .donaciones h2{
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            font-size: 4rem;
+            color: $title-color;
+            text-align: center;
+        }
+        
+        .donaciones .info_donacion{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .donaciones .info_donacion .donacion_refu{
+            height: 50rem;
+            width: 60rem;
+            border-radius: 15px;
+        }
+        
+        .info_donacion .texto_donacion{
+            font-size: 3rem;
+            width: 40%;
+            padding: 5rem;
+            text-align: center;
+            
+        }
+        
+        .enlaces_donaciones{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 7rem;
+        }
+        
+        .enlaces_donaciones .enlace{
+            text-align: center;
+        }
+        
+        .enlaces_donaciones .enlace p{
+            margin-top: -1rem;
+            font-size: 2rem;
+        }
+        
+        .enlaces_donaciones a img {
+            height: 15rem;
+        }
+        
+        /*Pagina donaciones MAIN FIN*/
+        
+        /*Pagina ¿Quienes Somos?*/
+        
+        .info_nosotros {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        .info_nosotros p{
+            font-size: 2rem;
+            padding-top: 3rem;
+        }
+        
+        .formulario h2{
+            font-size: 3rem;
+            color: $title-color;
+            text-align: center;
+            padding-top: 5rem;
+        }
+        
+        .hr_contacto{
+            width: 100%;
+            border-color: $title-color;
+        
+        }
+        .formulario .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        
+        .form .inputs{
+            display: flex;
+            gap: 3rem;
+            padding-top: 2rem;
+        }
+        
+        .form .inputs input{
+            height: 3rem;
+            width: 20rem;
+            background-color:$primary-color;
+            border: none;
+            font-size: 1.5rem;
+        }
+        .form .inputs input::placeholder{
+            text-align: center;}
+        
+        .form textarea{
+            margin-left: 0.5rem;
+            margin-top: 1rem;
+            width: 65rem;
+            height: 15rem;
+            font-size: 2rem;
+            resize: none;
+        }
+        
+        .form textarea::placeholder{
+            text-align: center;
+        }
+        
+        .form .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+        }
+        
+        .form .button input{
+            height: 5rem;
+            width: 15rem;
+            border: none;
+            background-color: $secondary-color;
+            font-size: 1.5rem;
+        }
+        
+        /*Pagina ¿Quienes Somos? FIN*/
+        
+        /*Pagina Registro*/
+        .registro{
+            display: grid;
+            justify-content: center;
+        }
+        
+        .registro .option {
+            display: flex;
+            height: 5rem;
+            width: 100rem;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5rem;
+        }
+        .registro .option .color1{
+            background-color: $primary-color;
+            border-radius: 100px;
+            height: 5rem;
+            width: 25rem;
+            font-size: 2rem;
+            border: none;
+        }
+        
+        .registro .option .color2{
+            border-radius: 100px;
+            height: 5rem;
+            width: 25rem;
+            font-size: 1.5rem;
+            border: none;
+        }
+        
+        
+        .form_registro{
+            padding-top: 5rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        form .input_registro{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .input_registro .refugio{
+            display: grid;
+            width: 100%;
+        }
+        
+        .input_registro .adoptante{
+            display: none;
+            width: 100%;
+        }
+        
+        
+        form .input_registro input{
+            width: 40rem;
+            height: 7rem;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 2rem;
+            outline: none;
+        }
+        
+        .boton_submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5rem;
+        }
+        
+        .button_registro{
+            font-size: 2rem;
+            border: none;
+            border-radius: 20px;
+            background-color: $primary-color;
+            height: 4rem;
+        }
+        /*Pagina Registro FIN*/
+        
+        /*GENERAL FOOTER*/
+        
+        .footer{
+            height: 8rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer .firma{
+            padding-top: 6rem;
+            padding-left: 2rem;
+        }
+        
+        .footer .firma p{
+            font-size: 1.3rem;
+        }
+        
+        .footer .redes{
+            display: flex;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .footer .redes img{
+            height: 4rem;
+        }
+        
+        .footer .redes .twitter{
+            padding-right: 3rem;
+        }
+        
+        /*Media queries*/
+        
+        @media (max-width: 990px) {
+            /*General*/
+            nav.navegacion.active {
+                height: 20rem !important;
+                background-color: $primary-color !important; /* Cambia este valor según sea necesario */
+            }
+        
+            .footer .firma p{
+                font-size:  0.7rem;
+            }
+            
+            .footer .redes img{
+                height: 2.5rem;
+            }
+            /*Fin General*/
+        
+            /*Main pagina principal*/
+            .variedad h3{
+                padding-bottom: 2rem;
+            }
+            
+            .variedad .carrucel img{
+                height: 13rem;
+                width: 15rem;
+            }
+        
+            /*Fin MAIN pagina principal*/
+            
+            /*Inicio Perros*/
+        
+            .fila{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+            }
+        
+            .fila .ficha{
+                margin: 0;
+            }
+            /*Fin Perros*/
+        
+            /*Inicio Donaciones*/
+            .donaciones {
+                display: grid;
+                align-items: center;
+                margin: 0 auto;
+            }
+        
+            .donaciones h2{
+                padding-top: 2rem;
+                font-size: 3rem;
+                color: $title-color;
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+        
+            .donaciones .info_donacion{
+                display: grid;
+                margin: 0 auto;
+                width: 100%;
+                align-items: center;
+                align-content: center;
+            }
+            
+            .donaciones .info_donacion .donacion_refu{
+                height: 40rem;
+                width: 40rem;
+                border-radius: 15px;
+                margin: 0 auto;
+            }
+            
+            .info_donacion .texto_donacion{
+                font-size: 2rem;
+                text-align: center;
+                width: 100%;
+                padding:5rem;
+                
+            }
+        
+            .enlaces_donaciones .enlace a img{
+                height: 10rem;
+            }
+            
+            /*Fin Donaciones*/
+        }
+        
+        @media (max-width:768px) {
+            
+        
+            .header ul li{
+                font-size: 1.5rem;
+                padding: 3rem 1rem 1rem 1rem;
+            }
+            
+            .header ul li a{
+                font-size: 1.5rem;
+            }
+        
+            .principal{
+                height: 100%;
+            }
+        
+        
+            /*MAIN PAGINA PRINCIPAL*/
+            .presentacion{
+                display: grid;
+                width: auto;
+                place-items: center;
+            }
+        
+            .presentacion img{
+                height:40rem;
+                width: 45rem;
+                padding: 1rem;
+            }
+            .presentacion p{
+                width: 40rem;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+        
+        
+            .variedad .carrucel{
+                display: grid;
+                margin: 0 auto;
+            }
+            
+            .variedad .carrucel .che_left{
+                display: none;
+            }
+        
+            .variedad .carrucel .che_right{
+                display: none;
+            }
+        
+            .variedad .carrucel img{
+                height: 25rem;
+                width: 30rem;
+                padding: 0;
+                margin: 0 auto;
+            }
+        
+            /*FIN MAIN PAGINA PRINCIPAL*/
+        
+        
+            /*Inicio Perros*/
+            .container .caja_filtro{
+                width: auto;
+            }
+            
+            .fila{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        
+            .fila .ficha{
+                margin: 0;
+                width: auto;;
+            }
+        
+            .fila .ficha .img_adop{
+                margin: 0;
+                width: 100%;
+            }
+            /*Fin Perros*/ 
+        
+            /*Inicio Contacto/Nosostros*/
+        
+            .info_nosotros {
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .info_nosotros p{
+                font-size: 1.5rem;
+                padding: 3rem 3rem 0 3rem ;
+            }
+        
+            .formulario h2{
+                font-size: 2.5rem;
+                color: $title-color;
+                text-align: center;
+            }
+            
+            .hr_contacto{
+                width: 100%;
+            }
+            .formulario .form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } 
+            
+            .form .inputs{
+                display: grid;
+                align-items: center;
+            }
+            
+            .form .inputs input{
+                height: 3rem;
+                margin: 0 auto;
+                background-color:$primary-color;
+                border: none;
+                font-size: 1.5rem;
+            }
+            .form textarea{
+                margin-left: 0.5rem;
+                margin-top: 1rem;
+                width: auto;
+                height: 15rem;
+                font-size: 2rem;
+                resize: none;
+            }
+        
+            /*Fin Contacto/Nosostros*/
+        
+            /*Inicio Registro*/
+            .registro .option {
+                display: flex;
+                height: 5rem;
+                width: 39rem;
+                padding: 1rem;
+                padding-top: 5rem;
+            }
+            .registro .option .color1{
+                width: 22rem;
+                margin-left: 1rem;
+            }
+            
+            .registro .option .color2{
+                border-radius: 100px;
+                height: 5rem;
+                width: 22rem;
+                font-size: 1.5rem;
+                border: none;
+            }
+            
+            form .input_registro input{
+                width: 35rem;
+            }
+            /*Fin Registro*/
+        }/*Generales*/
+*{
+    font-size: 62.1%;
+    font-family: 'Inria Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+/*ENCABEZADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.header .logo{
+    padding-left: 5rem;
+    height: 10rem;
+}
+
+.header .inicio ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.header ul li{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.header ul li a{
+    font-size: 2rem;
+}
+
+.header ul li a:hover{
+    color:$secondary-color
+}
+
+
+/*NAVEGACION*/
+
+.navegacion{
+    height: 6rem;
+    background-color: $primary-color !important ;
+}
+.navegacion a:hover{
+    color:$secondary-color;
+}
+
+/*FIN GENERALES*/
+
+/*Pagina principal MAIN*/
+
+.principal{
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.principal h1{
+    font-size: 5rem;
+    text-align: center;
+    color: $title-color;
+}
+
+.presentacion{
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem ;
+}
+
+.variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: $title-color;
+    font-weight: bold;
+}
+
+.variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover{
+    cursor: pointer;
+}
+
+.variedad .carrucel .che_left{
+    margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right{
+    margin-right: 10rem
+}
+.color_hr{
+    border-color:$primary-color;
+}
+
+/*Pagina principal Main fin*/
+
+/*Pagina Perros Main*/
+
+.container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+}
+
+.container .caja_filtro p{
+    font-size: 2rem;
+    color: $white;
+    font-weight: bold;
+    padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+    height: 3rem;
+    color: $white;
+    width: 100%;
+    
+}
+
+.mascotas{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.fila .ficha{
+    border-radius: 15px;
+    background-color: $primary-color;
+    height: 28rem;
+    margin-left: 2rem;
+}
+
+.fila .ficha .img_adop{
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+}
+
+.ficha .info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.ficha .info .icon{
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+
+/*PaginaDonaciones MAIN*/
+
+.donaciones h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: $title-color;
+    text-align: center;
+}
+
+.donaciones .info_donacion{
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu{
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+}
+
+.info_donacion .texto_donacion{
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+.enlaces_donaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.enlaces_donaciones .enlace{
+    text-align: center;
+}
+
+.enlaces_donaciones .enlace p{
+    margin-top: -1rem;
+    font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+    height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+
+/*Pagina ¿Quienes Somos?*/
+
+.info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info_nosotros p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: $title-color;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hr_contacto{
+    width: 100%;
+    border-color: $title-color;
+
+}
+.formulario .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form .inputs{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.form .inputs input{
+    height: 3rem;
+    width: 20rem;
+    background-color:$primary-color;
+    border: none;
+    font-size: 1.5rem;
+}
+.form .inputs input::placeholder{
+    text-align: center;}
+
+.form textarea{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+.form textarea::placeholder{
+    text-align: center;
+}
+
+.form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form .button input{
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: $secondary-color;
+    font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+
+/*Pagina Registro*/
+.registro{
+    display: grid;
+    justify-content: center;
+}
+
+.registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.registro .option .color1{
+    background-color: $primary-color;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.registro .option .color2{
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.form_registro{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input_registro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_registro .refugio{
+    display: grid;
+    width: 100%;
+}
+
+.input_registro .adoptante{
+    display: none;
+    width: 100%;
+}
+
+
+form .input_registro input{
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.boton_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.button_registro{
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-color;
+    height: 4rem;
+}
+/*Pagina Registro FIN*/
+
+/*GENERAL FOOTER*/
+
+.footer{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .firma{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.footer .firma p{
+    font-size: 1.3rem;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .redes img{
+    height: 4rem;
+}
+
+.footer .redes .twitter{
+    padding-right: 3rem;
+}
+
+/*Media queries*/
+
+@media (max-width: 990px) {
+    /*General*/
+    nav.navegacion.active {
+        height: 20rem !important;
+        background-color: $primary-color !important; /* Cambia este valor según sea necesario */
+    }
+
+    .footer .firma p{
+        font-size:  0.7rem;
+    }
+    
+    .footer .redes img{
+        height: 2.5rem;
+    }
+    /*Fin General*/
+
+    /*Main pagina principal*/
+    .variedad h3{
+        padding-bottom: 2rem;
+    }
+    
+    .variedad .carrucel img{
+        height: 13rem;
+        width: 15rem;
+    }
+
+    /*Fin MAIN pagina principal*/
+    
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .fila .ficha{
+        margin: 0;
+    }
+    /*Fin Perros*/
+
+    /*Inicio Donaciones*/
+    .donaciones {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .donaciones h2{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $title-color;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .donaciones .info_donacion{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .donaciones .info_donacion .donacion_refu{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .info_donacion .texto_donacion{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding:5rem;
+        
+    }
+
+    .enlaces_donaciones .enlace a img{
+        height: 10rem;
+    }
+    
+    /*Fin Donaciones*/
+}
+
+@media (max-width:768px) {
+    
+
+    .header ul li{
+        font-size: 1.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .header ul li a{
+        font-size: 1.5rem;
+    }
+
+    .principal{
+        height: 100%;
+    }
+
+
+    /*MAIN PAGINA PRINCIPAL*/
+    .presentacion{
+        display: grid;
+        width: auto;
+        place-items: center;
+    }
+
+    .presentacion img{
+        height:40rem;
+        width: 45rem;
+        padding: 1rem;
+    }
+    .presentacion p{
+        width: 40rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+
+    .variedad .carrucel{
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    .variedad .carrucel .che_left{
+        display: none;
+    }
+
+    .variedad .carrucel .che_right{
+        display: none;
+    }
+
+    .variedad .carrucel img{
+        height: 25rem;
+        width: 30rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /*FIN MAIN PAGINA PRINCIPAL*/
+
+
+    /*Inicio Perros*/
+    .container .caja_filtro{
+        width: auto;
+    }
+    
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fila .ficha{
+        margin: 0;
+        width: auto;;
+    }
+
+    .fila .ficha .img_adop{
+        margin: 0;
+        width: 100%;
+    }
+    /*Fin Perros*/ 
+
+    /*Inicio Contacto/Nosostros*/
+
+    .info_nosotros {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info_nosotros p{
+        font-size: 1.5rem;
+        padding: 3rem 3rem 0 3rem ;
+    }
+
+    .formulario h2{
+        font-size: 2.5rem;
+        color: $title-color;
+        text-align: center;
+    }
+    
+    .hr_contacto{
+        width: 100%;
+    }
+    .formulario .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .form .inputs{
+        display: grid;
+        align-items: center;
+    }
+    
+    .form .inputs input{
+        height: 3rem;
+        margin: 0 auto;
+        background-color:$primary-color;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .form textarea{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: auto;
+        height: 15rem;
+        font-size: 2rem;
+        resize: none;
+    }
+
+    /*Fin Contacto/Nosostros*/
+
+    /*Inicio Registro*/
+    .registro .option {
+        display: flex;
+        height: 5rem;
+        width: 39rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .registro .option .color1{
+        width: 22rem;
+        margin-left: 1rem;
+    }
+    
+    .registro .option .color2{
+        border-radius: 100px;
+        height: 5rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    form .input_registro input{
+        width: 35rem;
+    }
+    /*Fin Registro*/
+}/*Generales*/
+*{
+    font-size: 62.1%;
+    font-family: 'Inria Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+/*ENCABEZADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.header .logo{
+    padding-left: 5rem;
+    height: 10rem;
+}
+
+.header .inicio ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.header ul li{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.header ul li a{
+    font-size: 2rem;
+}
+
+.header ul li a:hover{
+    color:$secondary-color
+}
+
+
+/*NAVEGACION*/
+
+.navegacion{
+    height: 6rem;
+    background-color: $primary-color !important ;
+}
+.navegacion a:hover{
+    color:$secondary-color;
+}
+
+/*FIN GENERALES*/
+
+/*Pagina principal MAIN*/
+
+.principal{
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.principal h1{
+    font-size: 5rem;
+    text-align: center;
+    color: $title-color;
+}
+
+.presentacion{
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem ;
+}
+
+.variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: $title-color;
+    font-weight: bold;
+}
+
+.variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover{
+    cursor: pointer;
+}
+
+.variedad .carrucel .che_left{
+    margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right{
+    margin-right: 10rem
+}
+.color_hr{
+    border-color:$primary-color;
+}
+
+/*Pagina principal Main fin*/
+
+/*Pagina Perros Main*/
+
+.container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+}
+
+.container .caja_filtro p{
+    font-size: 2rem;
+    color: $white;
+    font-weight: bold;
+    padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+    height: 3rem;
+    color: $white;
+    width: 100%;
+    
+}
+
+.mascotas{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.fila .ficha{
+    border-radius: 15px;
+    background-color: $primary-color;
+    height: 28rem;
+    margin-left: 2rem;
+}
+
+.fila .ficha .img_adop{
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+}
+
+.ficha .info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.ficha .info .icon{
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+
+/*PaginaDonaciones MAIN*/
+
+.donaciones h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: $title-color;
+    text-align: center;
+}
+
+.donaciones .info_donacion{
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu{
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+}
+
+.info_donacion .texto_donacion{
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+.enlaces_donaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.enlaces_donaciones .enlace{
+    text-align: center;
+}
+
+.enlaces_donaciones .enlace p{
+    margin-top: -1rem;
+    font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+    height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+
+/*Pagina ¿Quienes Somos?*/
+
+.info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info_nosotros p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: $title-color;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hr_contacto{
+    width: 100%;
+    border-color: $title-color;
+
+}
+.formulario .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form .inputs{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.form .inputs input{
+    height: 3rem;
+    width: 20rem;
+    background-color:$primary-color;
+    border: none;
+    font-size: 1.5rem;
+}
+.form .inputs input::placeholder{
+    text-align: center;}
+
+.form textarea{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+.form textarea::placeholder{
+    text-align: center;
+}
+
+.form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form .button input{
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: $secondary-color;
+    font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+
+/*Pagina Registro*/
+.registro{
+    display: grid;
+    justify-content: center;
+}
+
+.registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.registro .option .color1{
+    background-color: $primary-color;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.registro .option .color2{
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.form_registro{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input_registro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_registro .refugio{
+    display: grid;
+    width: 100%;
+}
+
+.input_registro .adoptante{
+    display: none;
+    width: 100%;
+}
+
+
+form .input_registro input{
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.boton_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.button_registro{
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-color;
+    height: 4rem;
+}
+/*Pagina Registro FIN*/
+
+/*GENERAL FOOTER*/
+
+.footer{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .firma{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.footer .firma p{
+    font-size: 1.3rem;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .redes img{
+    height: 4rem;
+}
+
+.footer .redes .twitter{
+    padding-right: 3rem;
+}
+
+/*Media queries*/
+
+@media (max-width: 990px) {
+    /*General*/
+    nav.navegacion.active {
+        height: 20rem !important;
+        background-color: $primary-color !important; /* Cambia este valor según sea necesario */
+    }
+
+    .footer .firma p{
+        font-size:  0.7rem;
+    }
+    
+    .footer .redes img{
+        height: 2.5rem;
+    }
+    /*Fin General*/
+
+    /*Main pagina principal*/
+    .variedad h3{
+        padding-bottom: 2rem;
+    }
+    
+    .variedad .carrucel img{
+        height: 13rem;
+        width: 15rem;
+    }
+
+    /*Fin MAIN pagina principal*/
+    
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .fila .ficha{
+        margin: 0;
+    }
+    /*Fin Perros*/
+
+    /*Inicio Donaciones*/
+    .donaciones {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .donaciones h2{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $title-color;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .donaciones .info_donacion{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .donaciones .info_donacion .donacion_refu{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .info_donacion .texto_donacion{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding:5rem;
+        
+    }
+
+    .enlaces_donaciones .enlace a img{
+        height: 10rem;
+    }
+    
+    /*Fin Donaciones*/
+}
+
+@media (max-width:768px) {
+    
+
+    .header ul li{
+        font-size: 1.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .header ul li a{
+        font-size: 1.5rem;
+    }
+
+    .principal{
+        height: 100%;
+    }
+
+
+    /*MAIN PAGINA PRINCIPAL*/
+    .presentacion{
+        display: grid;
+        width: auto;
+        place-items: center;
+    }
+
+    .presentacion img{
+        height:40rem;
+        width: 45rem;
+        padding: 1rem;
+    }
+    .presentacion p{
+        width: 40rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+
+    .variedad .carrucel{
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    .variedad .carrucel .che_left{
+        display: none;
+    }
+
+    .variedad .carrucel .che_right{
+        display: none;
+    }
+
+    .variedad .carrucel img{
+        height: 25rem;
+        width: 30rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /*FIN MAIN PAGINA PRINCIPAL*/
+
+
+    /*Inicio Perros*/
+    .container .caja_filtro{
+        width: auto;
+    }
+    
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fila .ficha{
+        margin: 0;
+        width: auto;;
+    }
+
+    .fila .ficha .img_adop{
+        margin: 0;
+        width: 100%;
+    }
+    /*Fin Perros*/ 
+
+    /*Inicio Contacto/Nosostros*/
+
+    .info_nosotros {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info_nosotros p{
+        font-size: 1.5rem;
+        padding: 3rem 3rem 0 3rem ;
+    }
+
+    .formulario h2{
+        font-size: 2.5rem;
+        color: $title-color;
+        text-align: center;
+    }
+    
+    .hr_contacto{
+        width: 100%;
+    }
+    .formulario .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .form .inputs{
+        display: grid;
+        align-items: center;
+    }
+    
+    .form .inputs input{
+        height: 3rem;
+        margin: 0 auto;
+        background-color:$primary-color;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .form textarea{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: auto;
+        height: 15rem;
+        font-size: 2rem;
+        resize: none;
+    }
+
+    /*Fin Contacto/Nosostros*/
+
+    /*Inicio Registro*/
+    .registro .option {
+        display: flex;
+        height: 5rem;
+        width: 39rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .registro .option .color1{
+        width: 22rem;
+        margin-left: 1rem;
+    }
+    
+    .registro .option .color2{
+        border-radius: 100px;
+        height: 5rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    form .input_registro input{
+        width: 35rem;
+    }
+    /*Fin Registro*/
+}/*Generales*/
+*{
+    font-size: 62.1%;
+    font-family: 'Inria Serif', serif;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+/*ENCABEZADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.header .logo{
+    padding-left: 5rem;
+    height: 10rem;
+}
+
+.header .inicio ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.header ul li{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.header ul li a{
+    font-size: 2rem;
+}
+
+.header ul li a:hover{
+    color:$secondary-color
+}
+
+
+/*NAVEGACION*/
+
+.navegacion{
+    height: 6rem;
+    background-color: $primary-color !important ;
+}
+.navegacion a:hover{
+    color:$secondary-color;
+}
+
+/*FIN GENERALES*/
+
+/*Pagina principal MAIN*/
+
+.principal{
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.principal h1{
+    font-size: 5rem;
+    text-align: center;
+    color: $title-color;
+}
+
+.presentacion{
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.presentacion img{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem ;
+}
+
+.variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: $title-color;
+    font-weight: bold;
+}
+
+.variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover{
+    cursor: pointer;
+}
+
+.variedad .carrucel .che_left{
+    margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right{
+    margin-right: 10rem
+}
+.color_hr{
+    border-color:$primary-color;
+}
+
+/*Pagina principal Main fin*/
+
+/*Pagina Perros Main*/
+
+.container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+}
+
+.container .caja_filtro p{
+    font-size: 2rem;
+    color: $white;
+    font-weight: bold;
+    padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+    height: 3rem;
+    color: $white;
+    width: 100%;
+    
+}
+
+.mascotas{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.fila .ficha{
+    border-radius: 15px;
+    background-color: $primary-color;
+    height: 28rem;
+    margin-left: 2rem;
+}
+
+.fila .ficha .img_adop{
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+}
+
+.ficha .info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.ficha .info .icon{
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+
+/*PaginaDonaciones MAIN*/
+
+.donaciones h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: $title-color;
+    text-align: center;
+}
+
+.donaciones .info_donacion{
+    display: flex;
+    justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu{
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+}
+
+.info_donacion .texto_donacion{
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+.enlaces_donaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.enlaces_donaciones .enlace{
+    text-align: center;
+}
+
+.enlaces_donaciones .enlace p{
+    margin-top: -1rem;
+    font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+    height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+
+/*Pagina ¿Quienes Somos?*/
+
+.info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.info_nosotros p{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    color: $title-color;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hr_contacto{
+    width: 100%;
+    border-color: $title-color;
+
+}
+.formulario .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form .inputs{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.form .inputs input{
+    height: 3rem;
+    width: 20rem;
+    background-color:$primary-color;
+    border: none;
+    font-size: 1.5rem;
+}
+.form .inputs input::placeholder{
+    text-align: center;}
+
+.form textarea{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+}
+
+.form textarea::placeholder{
+    text-align: center;
+}
+
+.form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form .button input{
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: $secondary-color;
+    font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+
+/*Pagina Registro*/
+.registro{
+    display: grid;
+    justify-content: center;
+}
+
+.registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.registro .option .color1{
+    background-color: $primary-color;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.registro .option .color2{
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+.form_registro{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .input_registro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_registro .refugio{
+    display: grid;
+    width: 100%;
+}
+
+.input_registro .adoptante{
+    display: none;
+    width: 100%;
+}
+
+
+form .input_registro input{
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.boton_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.button_registro{
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-color;
+    height: 4rem;
+}
+/*Pagina Registro FIN*/
+
+/*GENERAL FOOTER*/
+
+.footer{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .firma{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.footer .firma p{
+    font-size: 1.3rem;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .redes img{
+    height: 4rem;
+}
+
+.footer .redes .twitter{
+    padding-right: 3rem;
+}
+
+/*Media queries*/
+
+@media (max-width: 990px) {
+    /*General*/
+    nav.navegacion.active {
+        height: 20rem !important;
+        background-color: $primary-color !important; /* Cambia este valor según sea necesario */
+    }
+
+    .footer .firma p{
+        font-size:  0.7rem;
+    }
+    
+    .footer .redes img{
+        height: 2.5rem;
+    }
+    /*Fin General*/
+
+    /*Main pagina principal*/
+    .variedad h3{
+        padding-bottom: 2rem;
+    }
+    
+    .variedad .carrucel img{
+        height: 13rem;
+        width: 15rem;
+    }
+
+    /*Fin MAIN pagina principal*/
+    
+    /*Inicio Perros*/
+
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .fila .ficha{
+        margin: 0;
+    }
+    /*Fin Perros*/
+
+    /*Inicio Donaciones*/
+    .donaciones {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .donaciones h2{
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $title-color;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .donaciones .info_donacion{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .donaciones .info_donacion .donacion_refu{
+        height: 40rem;
+        width: 40rem;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .info_donacion .texto_donacion{
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding:5rem;
+        
+    }
+
+    .enlaces_donaciones .enlace a img{
+        height: 10rem;
+    }
+    
+    /*Fin Donaciones*/
+}
+
+@media (max-width:768px) {
+    
+
+    .header ul li{
+        font-size: 1.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .header ul li a{
+        font-size: 1.5rem;
+    }
+
+    .principal{
+        height: 100%;
+    }
+
+
+    /*MAIN PAGINA PRINCIPAL*/
+    .presentacion{
+        display: grid;
+        width: auto;
+        place-items: center;
+    }
+
+    .presentacion img{
+        height:40rem;
+        width: 45rem;
+        padding: 1rem;
+    }
+    .presentacion p{
+        width: 40rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+
+    .variedad .carrucel{
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    .variedad .carrucel .che_left{
+        display: none;
+    }
+
+    .variedad .carrucel .che_right{
+        display: none;
+    }
+
+    .variedad .carrucel img{
+        height: 25rem;
+        width: 30rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /*FIN MAIN PAGINA PRINCIPAL*/
+
+
+    /*Inicio Perros*/
+    .container .caja_filtro{
+        width: auto;
+    }
+    
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fila .ficha{
+        margin: 0;
+        width: auto;;
+    }
+
+    .fila .ficha .img_adop{
+        margin: 0;
+        width: 100%;
+    }
+    /*Fin Perros*/ 
+
+    /*Inicio Contacto/Nosostros*/
+
+    .info_nosotros {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info_nosotros p{
+        font-size: 1.5rem;
+        padding: 3rem 3rem 0 3rem ;
+    }
+
+    .formulario h2{
+        font-size: 2.5rem;
+        color: $title-color;
+        text-align: center;
+    }
+    
+    .hr_contacto{
+        width: 100%;
+    }
+    .formulario .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .form .inputs{
+        display: grid;
+        align-items: center;
+    }
+    
+    .form .inputs input{
+        height: 3rem;
+        margin: 0 auto;
+        background-color:$primary-color;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .form textarea{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: auto;
+        height: 15rem;
+        font-size: 2rem;
+        resize: none;
+    }
+
+    /*Fin Contacto/Nosostros*/
+
+    /*Inicio Registro*/
+    .registro .option {
+        display: flex;
+        height: 5rem;
+        width: 39rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .registro .option .color1{
+        width: 22rem;
+        margin-left: 1rem;
+    }
+    
+    .registro .option .color2{
+        border-radius: 100px;
+        height: 5rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    form .input_registro input{
+        width: 35rem;
+    }
+    /*Fin Registro*/
+}
+        display: grid;
+        align-items: center;
+    }
+    
+    .form .inputs input{
+        height: 3rem;
+        margin: 0 auto;
+        background-color:$primary-color;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .form textarea{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: auto;
+        height: 15rem;
+        font-size: 2rem;
+        resize: none;
+    }
+
+    /*Fin Contacto/Nosostros*/
+
+    /*Inicio Registro*/
+    .registro .option {
+        display: flex;
+        height: 5rem;
+        width: 39rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .registro .option .color1{
+        width: 22rem;
+        margin-left: 1rem;
+    }
+    
+    .registro .option .color2{
+        border-radius: 100px;
+        height: 5rem;
+        width: 22rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    form .input_registro input{
+        width: 35rem;
+    }
+    /*Fin Registro*/
+}

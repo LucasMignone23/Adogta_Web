@@ -1,136 +1,762 @@
+@charset "UTF-8";
+/*VARIABLES*/
 /*Generales*/
-*{
-    font-size: 62.1%;
-    font-family: 'Inria Serif', serif;
+* {
+  font-size: 62.1%;
+  font-family: "Inria Serif", serif;
 }
 
-a{
-    text-decoration: none;
-    color: #000000;
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*ENCABEZADO*/
-.header{
-    display: flex;
-    justify-content: space-between;
-    height: 10rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
 }
 
-.header .logo{
-    padding-left: 5rem;
-    height: 10rem;
+.header .logo {
+  padding-left: 5rem;
+  height: 10rem;
 }
 
-.header .inicio ul{
-    display: flex;
-    list-style: none;
-    padding-right: 5rem;
+.header .inicio ul {
+  display: flex;
+  list-style: none;
+  padding-right: 5rem;
 }
 
-.header ul li{
-    font-size: 2rem;
-    padding: 2rem;
+.header ul li {
+  font-size: 2rem;
+  padding: 2rem;
 }
 
-.header ul li a{
-    font-size: 2rem;
+.header ul li a {
+  font-size: 2rem;
 }
 
-.header ul li a:hover{
-    color:#D9D9D9
+.header ul li a:hover {
+  color: #D9D9D9;
 }
-
 
 /*NAVEGACION*/
-
-.navegacion{
-    height: 6rem;
-    background-color: #A8D3CC !important ;
+.navegacion {
+  height: 6rem;
+  background-color: #A8D3CC !important;
 }
-.navegacion a:hover{
-    color:#D9D9D9;
+
+.navegacion a:hover {
+  color: #D9D9D9;
 }
 
 /*FIN GENERALES*/
-
 /*Pagina principal MAIN*/
-
-.principal{
-    height: auto;
-    padding-bottom: 3rem;
+.principal {
+  height: auto;
+  padding-bottom: 3rem;
 }
 
-.principal h1{
+.principal h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #6B431F;
+}
+
+.presentacion {
+  margin: 0 auto;
+  width: 100rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.presentacion img {
+  width: 35rem;
+  height: 30rem;
+  border-radius: 15px;
+}
+
+.presentacion p {
+  font-size: 2rem;
+  width: 50%;
+  padding-top: 3rem;
+}
+
+.variedad h3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #6B431F;
+  font-weight: bold;
+}
+
+.variedad .carrucel {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.variedad .carrucel img {
+  height: 16rem;
+  width: 19rem;
+  border-radius: 15px;
+}
+
+.variedad .carrucel .chevron {
+  height: 5rem;
+  padding-top: 6rem;
+}
+
+.variedad .carrucel .chevron:hover {
+  cursor: pointer;
+}
+
+.variedad .carrucel .che_left {
+  margin-left: 10rem;
+}
+
+.variedad .carrucel .che_right {
+  margin-right: 10rem;
+}
+
+.color_hr {
+  border-color: #A8D3CC;
+}
+
+/*Pagina principal Main fin*/
+/*Pagina Perros Main*/
+.container .caja_filtro {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A8D3CC;
+  opacity: 60%;
+  height: 5rem;
+  width: 50rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  margin-top: -5rem;
+  padding-right: 2rem;
+}
+
+.container .caja_filtro p {
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-left: 3rem;
+}
+
+.container .caja_filtro img {
+  height: 3rem;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.mascotas {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fila {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.fila .ficha {
+  border-radius: 15px;
+  background-color: #A8D3CC;
+  height: 28rem;
+  margin-left: 2rem;
+}
+
+.fila .ficha .img_adop {
+  border-radius: 15px;
+  padding: 5px;
+  height: 22rem;
+  width: 25rem;
+}
+
+.ficha .info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  font-size: 2.5rem;
+}
+
+.ficha .info .icon {
+  height: 2.2rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+/*Pagina Perros Main Fin */
+/*PaginaDonaciones MAIN*/
+.donaciones h2 {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  color: #6B431F;
+  text-align: center;
+}
+
+.donaciones .info_donacion {
+  display: flex;
+  justify-content: center;
+}
+
+.donaciones .info_donacion .donacion_refu {
+  height: 50rem;
+  width: 60rem;
+  border-radius: 15px;
+}
+
+.info_donacion .texto_donacion {
+  font-size: 3rem;
+  width: 40%;
+  padding: 5rem;
+  text-align: center;
+}
+
+.enlaces_donaciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.enlaces_donaciones .enlace {
+  text-align: center;
+}
+
+.enlaces_donaciones .enlace p {
+  margin-top: -1rem;
+  font-size: 2rem;
+}
+
+.enlaces_donaciones a img {
+  height: 15rem;
+}
+
+/*Pagina donaciones MAIN FIN*/
+/*Pagina ¿Quienes Somos?*/
+.info_nosotros {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.info_nosotros p {
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.formulario h2 {
+  font-size: 3rem;
+  color: #6B431F;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.hr_contacto {
+  width: 100%;
+  border-color: #6B431F;
+}
+
+.formulario .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .inputs {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.form .inputs input {
+  height: 3rem;
+  width: 20rem;
+  background-color: #A8D3CC;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.form .inputs input::placeholder {
+  text-align: center;
+}
+
+.form textarea {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  width: 65rem;
+  height: 15rem;
+  font-size: 2rem;
+  resize: none;
+}
+
+.form textarea::placeholder {
+  text-align: center;
+}
+
+.form .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.form .button input {
+  height: 5rem;
+  width: 15rem;
+  border: none;
+  background-color: #D9D9D9;
+  font-size: 1.5rem;
+}
+
+/*Pagina ¿Quienes Somos? FIN*/
+/*Pagina Registro*/
+.registro {
+  display: grid;
+  justify-content: center;
+}
+
+.registro .option {
+  display: flex;
+  height: 5rem;
+  width: 100rem;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.registro .option .color1 {
+  background-color: #A8D3CC;
+  border-radius: 100px;
+  height: 5rem;
+  width: 25rem;
+  font-size: 2rem;
+  border: none;
+}
+
+.registro .option .color2 {
+  border-radius: 100px;
+  height: 5rem;
+  width: 25rem;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.form_registro {
+  padding-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .input_registro {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_registro .refugio {
+  display: grid;
+  width: 100%;
+}
+
+.input_registro .adoptante {
+  display: none;
+  width: 100%;
+}
+
+form .input_registro input {
+  width: 40rem;
+  height: 7rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 2rem;
+  outline: none;
+}
+
+.boton_submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.button_registro {
+  font-size: 2rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #A8D3CC;
+  height: 4rem;
+}
+
+/*Pagina Registro FIN*/
+/*GENERAL FOOTER*/
+.footer {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .firma {
+  padding-top: 6rem;
+  padding-left: 2rem;
+}
+
+.footer .firma p {
+  font-size: 1.3rem;
+}
+
+.footer .redes {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.footer .redes img {
+  height: 4rem;
+}
+
+.footer .redes .twitter {
+  padding-right: 3rem;
+}
+
+/*Media queries*/
+@media (max-width: 990px) {
+  /*General*/
+  nav.navegacion.active {
+    height: 20rem !important;
+    background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
+  }
+  .footer .firma p {
+    font-size: 0.7rem;
+  }
+  .footer .redes img {
+    height: 2.5rem;
+  }
+  /*Fin General*/
+  /*Main pagina principal*/
+  .variedad h3 {
+    padding-bottom: 2rem;
+  }
+  .variedad .carrucel img {
+    height: 13rem;
+    width: 15rem;
+  }
+  /*Fin MAIN pagina principal*/
+  /*Inicio Perros*/
+  .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .fila .ficha {
+    margin: 0;
+  }
+  /*Fin Perros*/
+  /*Inicio Donaciones*/
+  .donaciones {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .donaciones h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .donaciones .info_donacion {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .donaciones .info_donacion .donacion_refu {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .info_donacion .texto_donacion {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5rem;
+  }
+  .enlaces_donaciones .enlace a img {
+    height: 10rem;
+  }
+  /*Fin Donaciones*/
+}
+@media (max-width: 768px) {
+  .header ul li {
+    font-size: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .header ul li a {
+    font-size: 1.5rem;
+  }
+  .principal {
+    height: 100%;
+  }
+  /*MAIN PAGINA PRINCIPAL*/
+  .presentacion {
+    display: grid;
+    width: auto;
+    place-items: center;
+  }
+  .presentacion img {
+    height: 40rem;
+    width: 45rem;
+    padding: 1rem;
+  }
+  .presentacion p {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .variedad .carrucel {
+    display: grid;
+    margin: 0 auto;
+  }
+  .variedad .carrucel .che_left {
+    display: none;
+  }
+  .variedad .carrucel .che_right {
+    display: none;
+  }
+  .variedad .carrucel img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  /*FIN MAIN PAGINA PRINCIPAL*/
+  /*Inicio Perros*/
+  .container .caja_filtro {
+    width: auto;
+  }
+  .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fila .ficha {
+    margin: 0;
+    width: auto;
+  }
+  .fila .ficha .img_adop {
+    margin: 0;
+    width: 100%;
+  }
+  /*Fin Perros*/
+  /*Inicio Contacto/Nosostros*/
+  .info_nosotros {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .info_nosotros p {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .formulario h2 {
+    font-size: 2.5rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .hr_contacto {
+    width: 100%;
+  }
+  .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs { /*Generales*/
+    /*ENCABEZADO*/
+    /*NAVEGACION*/
+    /*FIN GENERALES*/
+    /*Pagina principal MAIN*/
+    /*Pagina principal Main fin*/
+    /*Pagina Perros Main*/
+    /*Pagina Perros Main Fin */
+    /*PaginaDonaciones MAIN*/
+    /*Pagina donaciones MAIN FIN*/
+    /*Pagina ¿Quienes Somos?*/
+    /*Pagina ¿Quienes Somos? FIN*/
+    /*Pagina Registro*/
+    /*Pagina Registro FIN*/
+    /*GENERAL FOOTER*/
+    /*Media queries*/
+    /*Generales*/
+    /*ENCABEZADO*/
+    /*NAVEGACION*/
+    /*FIN GENERALES*/
+    /*Pagina principal MAIN*/
+    /*Pagina principal Main fin*/
+    /*Pagina Perros Main*/
+    /*Pagina Perros Main Fin */
+    /*PaginaDonaciones MAIN*/
+    /*Pagina donaciones MAIN FIN*/
+    /*Pagina ¿Quienes Somos?*/
+    /*Pagina ¿Quienes Somos? FIN*/
+    /*Pagina Registro*/
+    /*Pagina Registro FIN*/
+    /*GENERAL FOOTER*/
+    /*Media queries*/
+    /*Generales*/
+    /*ENCABEZADO*/
+    /*NAVEGACION*/
+    /*FIN GENERALES*/
+    /*Pagina principal MAIN*/
+    /*Pagina principal Main fin*/
+    /*Pagina Perros Main*/
+    /*Pagina Perros Main Fin */
+    /*PaginaDonaciones MAIN*/
+    /*Pagina donaciones MAIN FIN*/
+    /*Pagina ¿Quienes Somos?*/
+    /*Pagina ¿Quienes Somos? FIN*/
+    /*Pagina Registro*/
+    /*Pagina Registro FIN*/
+    /*GENERAL FOOTER*/
+    /*Media queries*/
+    /*Generales*/
+    /*ENCABEZADO*/
+    /*NAVEGACION*/
+    /*FIN GENERALES*/
+    /*Pagina principal MAIN*/
+    /*Pagina principal Main fin*/
+    /*Pagina Perros Main*/
+    /*Pagina Perros Main Fin */
+    /*PaginaDonaciones MAIN*/
+    /*Pagina donaciones MAIN FIN*/
+    /*Pagina ¿Quienes Somos?*/
+    /*Pagina ¿Quienes Somos? FIN*/
+    /*Pagina Registro*/
+    /*Pagina Registro FIN*/
+    /*GENERAL FOOTER*/
+    /*Media queries*/
+    display: grid;
+    align-items: center;
+  }
+  .form .inputs * {
+    font-size: 62.1%;
+    font-family: "Inria Serif", serif;
+  }
+  .form .inputs a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form .inputs .header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+  }
+  .form .inputs .header .logo {
+    padding-left: 5rem;
+    height: 10rem;
+  }
+  .form .inputs .header .inicio ul {
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+  }
+  .form .inputs .header ul li {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 2rem;
+  }
+  .form .inputs .header ul li a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .navegacion {
+    height: 6rem;
+    background-color: #A8D3CC !important;
+  }
+  .form .inputs .navegacion a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .principal {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .form .inputs .principal h1 {
     font-size: 5rem;
     text-align: center;
     color: #6B431F;
-}
-
-.presentacion{
+  }
+  .form .inputs .presentacion {
     margin: 0 auto;
     width: 100rem;
     display: flex;
     gap: 3rem;
     justify-content: center;
-}
-
-.presentacion img{
+  }
+  .form .inputs .presentacion img {
     width: 35rem;
     height: 30rem;
     border-radius: 15px;
-}
-.presentacion p {
+  }
+  .form .inputs .presentacion p {
     font-size: 2rem;
     width: 50%;
-    padding-top: 3rem ;
-}
-
-.variedad h3 {
+    padding-top: 3rem;
+  }
+  .form .inputs .variedad h3 {
     padding-top: 5rem;
     padding-bottom: 5rem;
     font-size: 3rem;
     text-align: center;
     color: #6B431F;
     font-weight: bold;
-}
-
-.variedad .carrucel {
+  }
+  .form .inputs .variedad .carrucel {
     display: flex;
     justify-content: center;
     gap: 5rem;
-}
-
-.variedad .carrucel img {
+  }
+  .form .inputs .variedad .carrucel img {
     height: 16rem;
     width: 19rem;
     border-radius: 15px;
-}
-
-.variedad .carrucel .chevron {
+  }
+  .form .inputs .variedad .carrucel .chevron {
     height: 5rem;
     padding-top: 6rem;
-}
-
-.variedad .carrucel .chevron:hover{
+  }
+  .form .inputs .variedad .carrucel .chevron:hover {
     cursor: pointer;
-}
-
-.variedad .carrucel .che_left{
+  }
+  .form .inputs .variedad .carrucel .che_left {
     margin-left: 10rem;
-}
-
-.variedad .carrucel .che_right{
-    margin-right: 10rem
-}
-.color_hr{
-    border-color:#A8D3CC;
-}
-
-/*Pagina principal Main fin*/
-
-/*Pagina Perros Main*/
-
-.container .caja_filtro {
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    margin-right: 10rem;
+  }
+  .form .inputs .color_hr {
+    border-color: #A8D3CC;
+  }
+  .form .inputs .container .caja_filtro {
     display: flex;
     justify-content: space-between;
     background-color: #A8D3CC;
@@ -141,199 +767,158 @@ a{
     align-items: center;
     margin-top: -5rem;
     padding-right: 2rem;
-}
-
-.container .caja_filtro p{
+  }
+  .form .inputs .container .caja_filtro p {
     font-size: 2rem;
-    color: #ffffff;
+    color: #FFFFFF;
     font-weight: bold;
     padding-left: 3rem;
-}
-
-.container .caja_filtro img {
+  }
+  .form .inputs .container .caja_filtro img {
     height: 3rem;
-    color: #ffffff;
+    color: #FFFFFF;
     width: 100%;
-    
-}
-
-.mascotas{
+  }
+  .form .inputs .mascotas {
     display: flex;
     justify-content: center;
     padding-top: 10rem;
     margin: 0 auto;
     width: 100%;
-}
-
-.fila{
+  }
+  .form .inputs .fila {
     display: flex;
     padding-bottom: 5rem;
-}
-
-.fila .ficha{
+  }
+  .form .inputs .fila .ficha {
     border-radius: 15px;
     background-color: #A8D3CC;
     height: 28rem;
     margin-left: 2rem;
-}
-
-.fila .ficha .img_adop{
+  }
+  .form .inputs .fila .ficha .img_adop {
     border-radius: 15px;
     padding: 5px;
     height: 22rem;
     width: 25rem;
-}
-
-.ficha .info{
+  }
+  .form .inputs .ficha .info {
     display: flex;
     justify-content: space-between;
     padding-left: 1rem;
     font-size: 2.5rem;
-}
-
-.ficha .info .icon{
+  }
+  .form .inputs .ficha .info .icon {
     height: 2.2rem;
     padding-top: 1rem;
     padding-right: 1rem;
-}
-
-/*Pagina Perros Main Fin */
-
-/*PaginaDonaciones MAIN*/
-
-.donaciones h2{
+  }
+  .form .inputs .donaciones h2 {
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-size: 4rem;
     color: #6B431F;
     text-align: center;
-}
-
-.donaciones .info_donacion{
+  }
+  .form .inputs .donaciones .info_donacion {
     display: flex;
     justify-content: center;
-}
-
-.donaciones .info_donacion .donacion_refu{
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
     height: 50rem;
     width: 60rem;
     border-radius: 15px;
-}
-
-.info_donacion .texto_donacion{
+  }
+  .form .inputs .info_donacion .texto_donacion {
     font-size: 3rem;
     width: 40%;
     padding: 5rem;
     text-align: center;
-    
-}
-
-.enlaces_donaciones{
+  }
+  .form .inputs .enlaces_donaciones {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 7rem;
-}
-
-.enlaces_donaciones .enlace{
+  }
+  .form .inputs .enlaces_donaciones .enlace {
     text-align: center;
-}
-
-.enlaces_donaciones .enlace p{
+  }
+  .form .inputs .enlaces_donaciones .enlace p {
     margin-top: -1rem;
     font-size: 2rem;
-}
-
-.enlaces_donaciones a img {
+  }
+  .form .inputs .enlaces_donaciones a img {
     height: 15rem;
-}
-
-/*Pagina donaciones MAIN FIN*/
-
-/*Pagina ¿Quienes Somos?*/
-
-.info_nosotros {
+  }
+  .form .inputs .info_nosotros {
     margin: 0 auto;
     width: 50%;
     text-align: center;
-}
-
-.info_nosotros p{
+  }
+  .form .inputs .info_nosotros p {
     font-size: 2rem;
     padding-top: 3rem;
-}
-
-.formulario h2{
+  }
+  .form .inputs .formulario h2 {
     font-size: 3rem;
     color: #6B431F;
     text-align: center;
     padding-top: 5rem;
-}
-
-.hr_contacto{
+  }
+  .form .inputs .hr_contacto {
     width: 100%;
     border-color: #6B431F;
-
-}
-.formulario .form{
+  }
+  .form .inputs .formulario .form {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
-
-.form .inputs{
+  }
+  .form .inputs .form .inputs {
     display: flex;
     gap: 3rem;
     padding-top: 2rem;
-}
-
-.form .inputs input{
+  }
+  .form .inputs .form .inputs input {
     height: 3rem;
     width: 20rem;
-    background-color:#A8D3CC;
+    background-color: #A8D3CC;
     border: none;
     font-size: 1.5rem;
-}
-.form .inputs input::placeholder{
-    text-align: center;}
-
-.form textarea{
+  }
+  .form .inputs .form .inputs input::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form textarea {
     margin-left: 0.5rem;
     margin-top: 1rem;
     width: 65rem;
     height: 15rem;
     font-size: 2rem;
     resize: none;
-}
-
-.form textarea::placeholder{
+  }
+  .form .inputs .form textarea::placeholder {
     text-align: center;
-}
-
-.form .button{
+  }
+  .form .inputs .form .button {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-}
-
-.form .button input{
+  }
+  .form .inputs .form .button input {
     height: 5rem;
     width: 15rem;
     border: none;
     background-color: #D9D9D9;
     font-size: 1.5rem;
-}
-
-/*Pagina ¿Quienes Somos? FIN*/
-
-/*Pagina Registro*/
-.registro{
+  }
+  .form .inputs .registro {
     display: grid;
     justify-content: center;
-}
-
-.registro .option {
+  }
+  .form .inputs .registro .option {
     display: flex;
     height: 5rem;
     width: 100rem;
@@ -341,52 +926,44 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-}
-.registro .option .color1{
+  }
+  .form .inputs .registro .option .color1 {
     background-color: #A8D3CC;
     border-radius: 100px;
     height: 5rem;
     width: 25rem;
     font-size: 2rem;
     border: none;
-}
-
-.registro .option .color2{
+  }
+  .form .inputs .registro .option .color2 {
     border-radius: 100px;
     height: 5rem;
     width: 25rem;
     font-size: 1.5rem;
     border: none;
-}
-
-
-.form_registro{
+  }
+  .form .inputs .form_registro {
     padding-top: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-form .input_registro{
+  }
+  .form .inputs form .input_registro {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-}
-
-.input_registro .refugio{
+  }
+  .form .inputs .input_registro .refugio {
     display: grid;
     width: 100%;
-}
-
-.input_registro .adoptante{
+  }
+  .form .inputs .input_registro .adoptante {
     display: none;
     width: 100%;
-}
-
-
-form .input_registro input{
+  }
+  .form .inputs form .input_registro input {
     width: 40rem;
     height: 7rem;
     border-top: none;
@@ -394,298 +971,1951 @@ form .input_registro input{
     border-right: none;
     font-size: 2rem;
     outline: none;
-}
-
-.boton_submit{
+  }
+  .form .inputs .boton_submit {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-}
-
-.button_registro{
+  }
+  .form .inputs .button_registro {
     font-size: 2rem;
     border: none;
     border-radius: 20px;
     background-color: #A8D3CC;
     height: 4rem;
-}
-/*Pagina Registro FIN*/
-
-/*GENERAL FOOTER*/
-
-.footer{
+  }
+  .form .inputs .footer {
     height: 8rem;
     display: flex;
     justify-content: space-between;
-}
-
-.footer .firma{
+  }
+  .form .inputs .footer .firma {
     padding-top: 6rem;
     padding-left: 2rem;
-}
-
-.footer .firma p{
+  }
+  .form .inputs .footer .firma p {
     font-size: 1.3rem;
-}
-
-.footer .redes{
+  }
+  .form .inputs .footer .redes {
     display: flex;
     gap: 5rem;
     align-items: center;
-}
-
-.footer .redes img{
+  }
+  .form .inputs .footer .redes img {
     height: 4rem;
-}
-
-.footer .redes .twitter{
+  }
+  .form .inputs .footer .redes .twitter {
     padding-right: 3rem;
+  }
+  /*Fin Contacto/Nosostros*/
+  /*Inicio Registro*/
+  /*Fin Registro*/
 }
-
-/*Media queries*/
-
-@media (max-width: 990px) {
+@media (max-width: 768px) and (max-width: 990px) {
+  .form .inputs {
     /*General*/
-    nav.navegacion.active {
-        height: 20rem !important;
-        background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
-    }
-
-    .footer .firma p{
-        font-size:  0.7rem;
-    }
-    
-    .footer .redes img{
-        height: 2.5rem;
-    }
     /*Fin General*/
-
     /*Main pagina principal*/
-    .variedad h3{
-        padding-bottom: 2rem;
-    }
-    
-    .variedad .carrucel img{
-        height: 13rem;
-        width: 15rem;
-    }
-
     /*Fin MAIN pagina principal*/
-    
     /*Inicio Perros*/
-
-    .fila{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .fila .ficha{
-        margin: 0;
-    }
     /*Fin Perros*/
-
     /*Inicio Donaciones*/
-    .donaciones {
-        display: grid;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .donaciones h2{
-        padding-top: 2rem;
-        font-size: 3rem;
-        color: #6B431F;
-        text-align: center;
-        padding-bottom: 2rem;
-    }
-
-    .donaciones .info_donacion{
-        display: grid;
-        margin: 0 auto;
-        width: 100%;
-        align-items: center;
-        align-content: center;
-    }
-    
-    .donaciones .info_donacion .donacion_refu{
-        height: 40rem;
-        width: 40rem;
-        border-radius: 15px;
-        margin: 0 auto;
-    }
-    
-    .info_donacion .texto_donacion{
-        font-size: 2rem;
-        text-align: center;
-        width: 100%;
-        padding:5rem;
-        
-    }
-
-    .enlaces_donaciones .enlace a img{
-        height: 10rem;
-    }
-    
     /*Fin Donaciones*/
+  }
+  .form .inputs nav.navegacion.active {
+    height: 20rem !important;
+    background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
+  }
+  .form .inputs .footer .firma p {
+    font-size: 0.7rem;
+  }
+  .form .inputs .footer .redes img {
+    height: 2.5rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-bottom: 2rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 13rem;
+    width: 15rem;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+  }
+  .form .inputs .donaciones {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace a img {
+    height: 10rem;
+  }
 }
-
-@media (max-width:768px) {
-    
-
-    .header ul li{
-        font-size: 1.5rem;
-        padding: 3rem 1rem 1rem 1rem;
-    }
-    
-    .header ul li a{
-        font-size: 1.5rem;
-    }
-
-    .principal{
-        height: 100%;
-    }
-
-
+@media (max-width: 768px) and (max-width: 768px) {
+  .form .inputs {
     /*MAIN PAGINA PRINCIPAL*/
-    .presentacion{
-        display: grid;
-        width: auto;
-        place-items: center;
-    }
-
-    .presentacion img{
-        height:40rem;
-        width: 45rem;
-        padding: 1rem;
-    }
-    .presentacion p{
-        width: 40rem;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-
-    .variedad .carrucel{
-        display: grid;
-        margin: 0 auto;
-    }
-    
-    .variedad .carrucel .che_left{
-        display: none;
-    }
-
-    .variedad .carrucel .che_right{
-        display: none;
-    }
-
-    .variedad .carrucel img{
-        height: 25rem;
-        width: 30rem;
-        padding: 0;
-        margin: 0 auto;
-    }
-
     /*FIN MAIN PAGINA PRINCIPAL*/
-
-
     /*Inicio Perros*/
-    .container .caja_filtro{
-        width: auto;
-    }
-    
-    .fila{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .fila .ficha{
-        margin: 0;
-        width: auto;;
-    }
-
-    .fila .ficha .img_adop{
-        margin: 0;
-        width: 100%;
-    }
-    /*Fin Perros*/ 
-
+    /*Fin Perros*/
     /*Inicio Contacto/Nosostros*/
-
-    .info_nosotros {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .info_nosotros p{
-        font-size: 1.5rem;
-        padding: 3rem 3rem 0 3rem ;
-    }
-
-    .formulario h2{
-        font-size: 2.5rem;
-        color: #6B431F;
-        text-align: center;
-    }
-    
-    .hr_contacto{
-        width: 100%;
-    }
-    .formulario .form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-    
-    .form .inputs{
-        display: grid;
-        align-items: center;
-    }
-    
-    .form .inputs input{
-        height: 3rem;
-        margin: 0 auto;
-        background-color:#A8D3CC;
-        border: none;
-        font-size: 1.5rem;
-    }
-    .form textarea{
-        margin-left: 0.5rem;
-        margin-top: 1rem;
-        width: auto;
-        height: 15rem;
-        font-size: 2rem;
-        resize: none;
-    }
-
     /*Fin Contacto/Nosostros*/
-
     /*Inicio Registro*/
-    .registro .option {
-        display: flex;
-        height: 5rem;
-        width: 39rem;
-        padding: 1rem;
-        padding-top: 5rem;
-    }
-    .registro .option .color1{
-        width: 22rem;
-        margin-left: 1rem;
-    }
-    
-    .registro .option .color2{
-        border-radius: 100px;
-        height: 5rem;
-        width: 22rem;
-        font-size: 1.5rem;
-        border: none;
-    }
-    
-    form .input_registro input{
-        width: 35rem;
-    }
     /*Fin Registro*/
+  }
+  .form .inputs .header ul li {
+    font-size: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 1.5rem;
+  }
+  .form .inputs .principal {
+    height: 100%;
+  }
+  .form .inputs .presentacion {
+    display: grid;
+    width: auto;
+    place-items: center;
+  }
+  .form .inputs .presentacion img {
+    height: 40rem;
+    width: 45rem;
+    padding: 1rem;
+  }
+  .form .inputs .presentacion p {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .form .inputs .variedad .carrucel {
+    display: grid;
+    margin: 0 auto;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form .inputs .container .caja_filtro {
+    width: auto;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+    width: auto;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    margin: 0;
+    width: 100%;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 2.5rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: grid;
+    align-items: center;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 39rem;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    width: 22rem;
+    margin-left: 1rem;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs form .input_registro input {
+    width: 35rem;
+  }
 }
+@media (max-width: 768px) {
+  .form .inputs * {
+    font-size: 62.1%;
+    font-family: "Inria Serif", serif;
+  }
+  .form .inputs a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form .inputs .header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+  }
+  .form .inputs .header .logo {
+    padding-left: 5rem;
+    height: 10rem;
+  }
+  .form .inputs .header .inicio ul {
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+  }
+  .form .inputs .header ul li {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 2rem;
+  }
+  .form .inputs .header ul li a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .navegacion {
+    height: 6rem;
+    background-color: #A8D3CC !important;
+  }
+  .form .inputs .navegacion a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .principal {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .form .inputs .principal h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #6B431F;
+  }
+  .form .inputs .presentacion {
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .form .inputs .presentacion img {
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+  }
+  .form .inputs .presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #6B431F;
+    font-weight: bold;
+  }
+  .form .inputs .variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+  }
+  .form .inputs .variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+  }
+  .form .inputs .variedad .carrucel .chevron:hover {
+    cursor: pointer;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    margin-left: 10rem;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    margin-right: 10rem;
+  }
+  .form .inputs .color_hr {
+    border-color: #A8D3CC;
+  }
+  .form .inputs .container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A8D3CC;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+  }
+  .form .inputs .container .caja_filtro p {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 3rem;
+  }
+  .form .inputs .container .caja_filtro img {
+    height: 3rem;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  .form .inputs .mascotas {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .form .inputs .fila {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .form .inputs .fila .ficha {
+    border-radius: 15px;
+    background-color: #A8D3CC;
+    height: 28rem;
+    margin-left: 2rem;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+  }
+  .form .inputs .ficha .info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+  }
+  .form .inputs .ficha .info .icon {
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: flex;
+    justify-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace {
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones .enlace p {
+    margin-top: -1rem;
+    font-size: 2rem;
+  }
+  .form .inputs .enlaces_donaciones a img {
+    height: 15rem;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+    border-color: #6B431F;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    width: 20rem;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form .inputs input::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .form textarea::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .button input {
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem;
+  }
+  .form .inputs .registro {
+    display: grid;
+    justify-content: center;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    background-color: #A8D3CC;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs .form_registro {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs form .input_registro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .input_registro .refugio {
+    display: grid;
+    width: 100%;
+  }
+  .form .inputs .input_registro .adoptante {
+    display: none;
+    width: 100%;
+  }
+  .form .inputs form .input_registro input {
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+  }
+  .form .inputs .boton_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .button_registro {
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #A8D3CC;
+    height: 4rem;
+  }
+  .form .inputs .footer {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .inputs .footer .firma {
+    padding-top: 6rem;
+    padding-left: 2rem;
+  }
+  .form .inputs .footer .firma p {
+    font-size: 1.3rem;
+  }
+  .form .inputs .footer .redes {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  .form .inputs .footer .redes img {
+    height: 4rem;
+  }
+  .form .inputs .footer .redes .twitter {
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 990px) {
+  .form .inputs {
+    /*General*/
+    /*Fin General*/
+    /*Main pagina principal*/
+    /*Fin MAIN pagina principal*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Donaciones*/
+    /*Fin Donaciones*/
+  }
+  .form .inputs nav.navegacion.active {
+    height: 20rem !important;
+    background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
+  }
+  .form .inputs .footer .firma p {
+    font-size: 0.7rem;
+  }
+  .form .inputs .footer .redes img {
+    height: 2.5rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-bottom: 2rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 13rem;
+    width: 15rem;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+  }
+  .form .inputs .donaciones {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace a img {
+    height: 10rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .form .inputs {
+    /*MAIN PAGINA PRINCIPAL*/
+    /*FIN MAIN PAGINA PRINCIPAL*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Contacto/Nosostros*/
+    /*Fin Contacto/Nosostros*/
+    /*Inicio Registro*/
+    /*Fin Registro*/
+  }
+  .form .inputs .header ul li {
+    font-size: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 1.5rem;
+  }
+  .form .inputs .principal {
+    height: 100%;
+  }
+  .form .inputs .presentacion {
+    display: grid;
+    width: auto;
+    place-items: center;
+  }
+  .form .inputs .presentacion img {
+    height: 40rem;
+    width: 45rem;
+    padding: 1rem;
+  }
+  .form .inputs .presentacion p {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .form .inputs .variedad .carrucel {
+    display: grid;
+    margin: 0 auto;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form .inputs .container .caja_filtro {
+    width: auto;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+    width: auto;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    margin: 0;
+    width: 100%;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 2.5rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: grid;
+    align-items: center;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 39rem;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    width: 22rem;
+    margin-left: 1rem;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs form .input_registro input {
+    width: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .form .inputs * {
+    font-size: 62.1%;
+    font-family: "Inria Serif", serif;
+  }
+  .form .inputs a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form .inputs .header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+  }
+  .form .inputs .header .logo {
+    padding-left: 5rem;
+    height: 10rem;
+  }
+  .form .inputs .header .inicio ul {
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+  }
+  .form .inputs .header ul li {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 2rem;
+  }
+  .form .inputs .header ul li a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .navegacion {
+    height: 6rem;
+    background-color: #A8D3CC !important;
+  }
+  .form .inputs .navegacion a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .principal {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .form .inputs .principal h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #6B431F;
+  }
+  .form .inputs .presentacion {
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .form .inputs .presentacion img {
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+  }
+  .form .inputs .presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #6B431F;
+    font-weight: bold;
+  }
+  .form .inputs .variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+  }
+  .form .inputs .variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+  }
+  .form .inputs .variedad .carrucel .chevron:hover {
+    cursor: pointer;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    margin-left: 10rem;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    margin-right: 10rem;
+  }
+  .form .inputs .color_hr {
+    border-color: #A8D3CC;
+  }
+  .form .inputs .container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A8D3CC;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+  }
+  .form .inputs .container .caja_filtro p {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 3rem;
+  }
+  .form .inputs .container .caja_filtro img {
+    height: 3rem;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  .form .inputs .mascotas {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .form .inputs .fila {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .form .inputs .fila .ficha {
+    border-radius: 15px;
+    background-color: #A8D3CC;
+    height: 28rem;
+    margin-left: 2rem;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+  }
+  .form .inputs .ficha .info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+  }
+  .form .inputs .ficha .info .icon {
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: flex;
+    justify-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace {
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones .enlace p {
+    margin-top: -1rem;
+    font-size: 2rem;
+  }
+  .form .inputs .enlaces_donaciones a img {
+    height: 15rem;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+    border-color: #6B431F;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    width: 20rem;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form .inputs input::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .form textarea::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .button input {
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem;
+  }
+  .form .inputs .registro {
+    display: grid;
+    justify-content: center;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    background-color: #A8D3CC;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs .form_registro {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs form .input_registro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .input_registro .refugio {
+    display: grid;
+    width: 100%;
+  }
+  .form .inputs .input_registro .adoptante {
+    display: none;
+    width: 100%;
+  }
+  .form .inputs form .input_registro input {
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+  }
+  .form .inputs .boton_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .button_registro {
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #A8D3CC;
+    height: 4rem;
+  }
+  .form .inputs .footer {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .inputs .footer .firma {
+    padding-top: 6rem;
+    padding-left: 2rem;
+  }
+  .form .inputs .footer .firma p {
+    font-size: 1.3rem;
+  }
+  .form .inputs .footer .redes {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  .form .inputs .footer .redes img {
+    height: 4rem;
+  }
+  .form .inputs .footer .redes .twitter {
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 990px) {
+  .form .inputs {
+    /*General*/
+    /*Fin General*/
+    /*Main pagina principal*/
+    /*Fin MAIN pagina principal*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Donaciones*/
+    /*Fin Donaciones*/
+  }
+  .form .inputs nav.navegacion.active {
+    height: 20rem !important;
+    background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
+  }
+  .form .inputs .footer .firma p {
+    font-size: 0.7rem;
+  }
+  .form .inputs .footer .redes img {
+    height: 2.5rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-bottom: 2rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 13rem;
+    width: 15rem;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+  }
+  .form .inputs .donaciones {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace a img {
+    height: 10rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .form .inputs {
+    /*MAIN PAGINA PRINCIPAL*/
+    /*FIN MAIN PAGINA PRINCIPAL*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Contacto/Nosostros*/
+    /*Fin Contacto/Nosostros*/
+    /*Inicio Registro*/
+    /*Fin Registro*/
+  }
+  .form .inputs .header ul li {
+    font-size: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 1.5rem;
+  }
+  .form .inputs .principal {
+    height: 100%;
+  }
+  .form .inputs .presentacion {
+    display: grid;
+    width: auto;
+    place-items: center;
+  }
+  .form .inputs .presentacion img {
+    height: 40rem;
+    width: 45rem;
+    padding: 1rem;
+  }
+  .form .inputs .presentacion p {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .form .inputs .variedad .carrucel {
+    display: grid;
+    margin: 0 auto;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form .inputs .container .caja_filtro {
+    width: auto;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+    width: auto;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    margin: 0;
+    width: 100%;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 2.5rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: grid;
+    align-items: center;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 39rem;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    width: 22rem;
+    margin-left: 1rem;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs form .input_registro input {
+    width: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .form .inputs * {
+    font-size: 62.1%;
+    font-family: "Inria Serif", serif;
+  }
+  .form .inputs a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form .inputs .header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+  }
+  .form .inputs .header .logo {
+    padding-left: 5rem;
+    height: 10rem;
+  }
+  .form .inputs .header .inicio ul {
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+  }
+  .form .inputs .header ul li {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 2rem;
+  }
+  .form .inputs .header ul li a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .navegacion {
+    height: 6rem;
+    background-color: #A8D3CC !important;
+  }
+  .form .inputs .navegacion a:hover {
+    color: #D9D9D9;
+  }
+  .form .inputs .principal {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .form .inputs .principal h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #6B431F;
+  }
+  .form .inputs .presentacion {
+    margin: 0 auto;
+    width: 100rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .form .inputs .presentacion img {
+    width: 35rem;
+    height: 30rem;
+    border-radius: 15px;
+  }
+  .form .inputs .presentacion p {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #6B431F;
+    font-weight: bold;
+  }
+  .form .inputs .variedad .carrucel {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 16rem;
+    width: 19rem;
+    border-radius: 15px;
+  }
+  .form .inputs .variedad .carrucel .chevron {
+    height: 5rem;
+    padding-top: 6rem;
+  }
+  .form .inputs .variedad .carrucel .chevron:hover {
+    cursor: pointer;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    margin-left: 10rem;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    margin-right: 10rem;
+  }
+  .form .inputs .color_hr {
+    border-color: #A8D3CC;
+  }
+  .form .inputs .container .caja_filtro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A8D3CC;
+    opacity: 60%;
+    height: 5rem;
+    width: 50rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    margin-top: -5rem;
+    padding-right: 2rem;
+  }
+  .form .inputs .container .caja_filtro p {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 3rem;
+  }
+  .form .inputs .container .caja_filtro img {
+    height: 3rem;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  .form .inputs .mascotas {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .form .inputs .fila {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .form .inputs .fila .ficha {
+    border-radius: 15px;
+    background-color: #A8D3CC;
+    height: 28rem;
+    margin-left: 2rem;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    border-radius: 15px;
+    padding: 5px;
+    height: 22rem;
+    width: 25rem;
+  }
+  .form .inputs .ficha .info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+  }
+  .form .inputs .ficha .info .icon {
+    height: 2.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: flex;
+    justify-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 50rem;
+    width: 60rem;
+    border-radius: 15px;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 3rem;
+    width: 40%;
+    padding: 5rem;
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace {
+    text-align: center;
+  }
+  .form .inputs .enlaces_donaciones .enlace p {
+    margin-top: -1rem;
+    font-size: 2rem;
+  }
+  .form .inputs .enlaces_donaciones a img {
+    height: 15rem;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+    border-color: #6B431F;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    width: 20rem;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form .inputs input::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 65rem;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .form textarea::placeholder {
+    text-align: center;
+  }
+  .form .inputs .form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .form .inputs .form .button input {
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 1.5rem;
+  }
+  .form .inputs .registro {
+    display: grid;
+    justify-content: center;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 100rem;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    background-color: #A8D3CC;
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+    border: none;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs .form_registro {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs form .input_registro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .input_registro .refugio {
+    display: grid;
+    width: 100%;
+  }
+  .form .inputs .input_registro .adoptante {
+    display: none;
+    width: 100%;
+  }
+  .form .inputs form .input_registro input {
+    width: 40rem;
+    height: 7rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    outline: none;
+  }
+  .form .inputs .boton_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .form .inputs .button_registro {
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #A8D3CC;
+    height: 4rem;
+  }
+  .form .inputs .footer {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .inputs .footer .firma {
+    padding-top: 6rem;
+    padding-left: 2rem;
+  }
+  .form .inputs .footer .firma p {
+    font-size: 1.3rem;
+  }
+  .form .inputs .footer .redes {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  .form .inputs .footer .redes img {
+    height: 4rem;
+  }
+  .form .inputs .footer .redes .twitter {
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 990px) {
+  .form .inputs {
+    /*General*/
+    /*Fin General*/
+    /*Main pagina principal*/
+    /*Fin MAIN pagina principal*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Donaciones*/
+    /*Fin Donaciones*/
+  }
+  .form .inputs nav.navegacion.active {
+    height: 20rem !important;
+    background-color: #A8D3CC !important; /* Cambia este valor según sea necesario */
+  }
+  .form .inputs .footer .firma p {
+    font-size: 0.7rem;
+  }
+  .form .inputs .footer .redes img {
+    height: 2.5rem;
+  }
+  .form .inputs .variedad h3 {
+    padding-bottom: 2rem;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 13rem;
+    width: 15rem;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+  }
+  .form .inputs .donaciones {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form .inputs .donaciones h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: #6B431F;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .form .inputs .donaciones .info_donacion {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .form .inputs .donaciones .info_donacion .donacion_refu {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  .form .inputs .info_donacion .texto_donacion {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5rem;
+  }
+  .form .inputs .enlaces_donaciones .enlace a img {
+    height: 10rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .form .inputs {
+    /*MAIN PAGINA PRINCIPAL*/
+    /*FIN MAIN PAGINA PRINCIPAL*/
+    /*Inicio Perros*/
+    /*Fin Perros*/
+    /*Inicio Contacto/Nosostros*/
+    /*Fin Contacto/Nosostros*/
+    /*Inicio Registro*/
+    /*Fin Registro*/
+  }
+  .form .inputs .header ul li {
+    font-size: 1.5rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .form .inputs .header ul li a {
+    font-size: 1.5rem;
+  }
+  .form .inputs .principal {
+    height: 100%;
+  }
+  .form .inputs .presentacion {
+    display: grid;
+    width: auto;
+    place-items: center;
+  }
+  .form .inputs .presentacion img {
+    height: 40rem;
+    width: 45rem;
+    padding: 1rem;
+  }
+  .form .inputs .presentacion p {
+    width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .form .inputs .variedad .carrucel {
+    display: grid;
+    margin: 0 auto;
+  }
+  .form .inputs .variedad .carrucel .che_left {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel .che_right {
+    display: none;
+  }
+  .form .inputs .variedad .carrucel img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form .inputs .container .caja_filtro {
+    width: auto;
+  }
+  .form .inputs .fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form .inputs .fila .ficha {
+    margin: 0;
+    width: auto;
+  }
+  .form .inputs .fila .ficha .img_adop {
+    margin: 0;
+    width: 100%;
+  }
+  .form .inputs .info_nosotros {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .form .inputs .info_nosotros p {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .form .inputs .formulario h2 {
+    font-size: 2.5rem;
+    color: #6B431F;
+    text-align: center;
+  }
+  .form .inputs .hr_contacto {
+    width: 100%;
+  }
+  .form .inputs .formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .inputs .form .inputs {
+    display: grid;
+    align-items: center;
+  }
+  .form .inputs .form .inputs input {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form .inputs .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .form .inputs .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 39rem;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .form .inputs .registro .option .color1 {
+    width: 22rem;
+    margin-left: 1rem;
+  }
+  .form .inputs .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .form .inputs form .input_registro input {
+    width: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .form .inputs input {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #A8D3CC;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .form textarea {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    resize: none;
+  }
+  .registro .option {
+    display: flex;
+    height: 5rem;
+    width: 39rem;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .registro .option .color1 {
+    width: 22rem;
+    margin-left: 1rem;
+  }
+  .registro .option .color2 {
+    border-radius: 100px;
+    height: 5rem;
+    width: 22rem;
+    font-size: 1.5rem;
+    border: none;
+  }
+  form .input_registro input {
+    width: 35rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
