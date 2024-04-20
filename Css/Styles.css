@@ -595,6 +595,7 @@ form .input_registro input{
     .container .caja_filtro{
         width: auto;
     }
+    
     .fila{
         display: grid;
         grid-template-columns: 1fr 1fr;
