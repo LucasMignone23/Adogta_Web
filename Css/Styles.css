@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*VARIABLES*/
+/*MIXINS*/
 /*Generales*/
 * {
   font-size: 62.1%;
@@ -66,11 +67,11 @@ a {
 }
 
 .presentacion {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100rem;
-  display: flex;
   gap: 3rem;
-  justify-content: center;
 }
 
 .presentacion img {
