@@ -1,0 +1,11 @@
+{
+  "name": "web_mascotas",
+  "version": "1.0.0",
+  "description": "web_mascotas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Mignone",
+  "license": "ISC"
+}
