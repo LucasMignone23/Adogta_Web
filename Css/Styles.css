@@ -164,19 +164,21 @@ a {
   width: 100%;
 }
 
-.fila {
-  display: flex;
-  padding-bottom: 5rem;
+.adopta-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2rem;
 }
 
-.fila .ficha {
+.adopta-grid .ficha {
   border-radius: 15px;
   background-color: #A8D3CC;
   height: 28rem;
   margin-left: 2rem;
 }
 
-.fila .ficha .img_adop {
+.adopta-grid .ficha .img_adop {
   padding: 5px;
   height: 22rem;
   width: 25rem;
@@ -460,12 +462,17 @@ form .input_registro input {
   }
   /*Fin MAIN pagina principal*/
   /*Inicio Perros*/
-  .fila {
+  .adopta-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .fila .ficha {
+  .adopta-grid .ficha {
+    width: 30rem;
+    margin: 0;
+  }
+  .adopta-grid .ficha .img_adop {
+    width: 100%;
     margin: 0;
   }
   /*Fin Perros*/
@@ -555,17 +562,14 @@ form .input_registro input {
   .container .caja_filtro {
     width: auto;
   }
-  .fila {
+  .adopta-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  .fila .ficha {
-    width: auto;
-    margin: 0;
-  }
-  .fila .ficha .img_adop {
-    width: 100%;
-    margin: 0;
+  .adopta-grid .ficha {
+    width: 25rem;
+    margin: 0 auto;
   }
   /*Fin Perros*/
   /*Inicio Contacto/Nosostros*/
